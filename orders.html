@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>My Platform</title>
+    <title>Orders</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#fff">
@@ -39,26 +39,27 @@
           <!-- nav-->
           <nav class="nav js-nav"><a class="nav__link nav__link_head" href="/">
               <div class="my_nav__preview"><img class="nav__pic" src="img/coinpedia1.png" alt="Logo"></div>
+              
             </a>
             <div class="nav__list">
               <!-- mobile primary menu-->
               <div class="nav__primary js-nav-primary">
-                <div class="nav__group">
-                  <a class="nav__link active" href="#" title="Dashboard">
+                <div class="nav__group"><a class="nav__link active" href="dashboard.html" title="Dashboard">
                     <div class="nav__preview"><i class="la la-tachometer-alt "></i></div>
                     <div class="nav__title">Dashboard</div>
-                  </a>
-                  <a class="nav__link" href="#" title="Projects">
+                  </a><a class="nav__link" href="orders.html" title="Projects">
                     <div class="nav__preview"><i class="la la-toolbox "></i></div>
-                    <div class="nav__title">My orders</div>
-                  </a>
-                  <a class="nav__link" href="#" title="Tasks">
+                    <div class="nav__title">My Orders</div>
+                  </a><a class="nav__link" href="platform.html" title="Tasks">
                     <div class="nav__preview"><i class="la la-clipboard-check "></i></div>
                     <div class="nav__title">Platform</div>
-                  </a>
-                  <a class="nav__link" href="#" title="Kanban">
+                  </a><a class="nav__link" href="wallet.html" title="Kanban">
                     <div class="nav__preview"><i class="la la-images "></i></div>
                     <div class="nav__title">Wallet</div>
+                  </a>
+                  <a class="nav__link" href="reports.html" title="Kanban">
+                    <div class="nav__preview"><i class="la la-images "></i></div>
+                    <div class="nav__title">Reports</div>
                   </a>
                 </div>
               </div>
@@ -66,69 +67,29 @@
           </nav>
         </div>
       </div>
-      <div class="container js-container">
+      <div class="container js-container myorders">
         <div class="container__head">
           <div class="container__title title title_md">
             <div class='top_search'>
               <i class='la la-search'></i><input type='text' placeholder='Search' class='top_search_input' />
             </div>
           </div>
-          <div class="container__search search js-search"><button class="search__action action js-search-open"><i class="la la-bell"></i></button>
-            <div class="search__dropdown js-search-dropdown">
-              <div class="search__field"><input class="search__input js-search-input" type="search" placeholder="Start typing…">
-                <div class="search__icon"><i class="la la-bell"></i></div>
-              </div>
-              <div class="search__results js-search-results"><a class="search__result" href="#">
-                  <div class="search__cell">
-                    <div class="search__preview color-red"><i class="lab la-dribbble "></i></div>
-                  </div>
-                  <div class="search__cell">
-                    <div class="search__title">Dribble Redesign</div>
-                    <div class="search__text">Webdesign</div>
-                  </div>
-                  <div class="search__cell mobile-hide">
-                    <!-- tag-->
-                    <div class="search__tag tag gray">24 Feb 2019</div>
-                  </div>
-                </a><a class="search__result" href="#">
-                  <div class="search__cell">
-                    <div class="search__preview color-green"><i class="lab la-evernote "></i></div>
-                  </div>
-                  <div class="search__cell">
-                    <div class="search__title">New HTML Theme</div>
-                    <div class="search__text">Theme</div>
-                  </div>
-                  <div class="search__cell mobile-hide">
-                    <!-- tag-->
-                    <div class="search__tag tag gray">20 May 2019</div>
-                  </div>
-                </a><a class="search__result" href="#">
-                  <div class="search__cell">
-                    <div class="search__preview"><img class="search__pic" src="img/user-1.jpg" alt="User"></div>
-                  </div>
-                  <div class="search__cell">
-                    <div class="search__title">Bradley Wilkins</div>
-                    <div class="search__text">b.wilkins@gmail.com</div>
-                  </div>
-                  <div class="search__cell mobile-hide">
-                    <!-- tag-->
-                    <div class="search__tag tag gray">Designer</div>
-                  </div>
-                </a></div>
-            </div>
-            <div class="search__backdrop backdrop js-search-backdrop"></div>
+          <div class="container__search search js-search">
+             <button class="top-cards-bell"><i class="la la-bell"></i></button>
+
+            
           </div>
           <!-- new-->
-          <div class="container__new new js-new">
-            <button class="new__action action js-new-open" style='padding:10px 20px;'>
+          <div class="container__new new js-new" style='border:0px'>
+            <button class="new__action action js-new-open user_my_orders" style='padding:10px 20px;border:0px'>
               <img src='img/user-1.jpg' width='20' style='border-radius:50%; margin-left: -10px;margin-right:7px'/><p class='evan_yates'>Evan Yates</p><i class="la la-angle-down" style='margin-left:12px'></i>
             </button>
             <div class="new__dropdown js-new-dropdown">
-              <a class="new__item active" href="#">
+              <a class="new__item" href="profile.html">
                 <div class="new__icon"><i class="la la-toolbox "></i></div>
                 <div class="new__title">Profile</div>
               </a>
-              <a class="new__item" href="#">
+              <a class="new__item" href="wallet.html">
                 <div class="new__icon"><i class="la la-clipboard-check "></i></div>
                 <div class="new__title">Wallet</div>
               </a>
@@ -136,7 +97,7 @@
                 <div class="new__icon"><i class="la la-user-lock "></i></div>
                 <div class="new__title">Updates</div>
               </a>
-              <a class="new__item" href="#">
+              <a class="new__item" href="logout">
                 <div class="new__icon"><i class="la la-calendar-week "></i></div>
                 <div class="new__title">Logout</div>
               </a>
@@ -146,22 +107,17 @@
         </div>
         <div class="container__body">
           
-          <div class="table_panel js-panel myplatform_tbl">
+          <div class="table_panel js-panel" style='padding: 8px 18px'>
             <div class="panel__head panel__head_line">
               <div class="sub_title">
-                <button class="sub_title_buttons_one"><i class="la la-arrow-left" style='margin-right:10px'></i>Back to Projects</button>
-                <button class="sub_title_buttons_two"></i>My Platforms</button>
+                <p class='my_orders_title'>My Orders</p>
+                <p>Here you will add the details of orders</p>
               </div>
               <div class="panel__group">
                 <div class="sort js-sort">
                   <div class="">
-                    <div class="sort_add_filter">
-                      <i class="la la-plus" style='margin-right:10px'></i>
-                      <a href='addNewPlatforms.html' style='color:white; font-weight:100'>Add Platform</a>
-                    </div>
+                    
                   </div>
-                  
-                  
                 </div>
               </div>
             </div>
@@ -171,166 +127,173 @@
                 <div class="data data_list">
                   <div class="data__container">
                     <div class="My_data__head">
-                      <div class="sub_header_section">
-                        <div class='lorem_ipsum_sub_header'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
-                        <div class='filter_action_buttons'>
-                          <div class='filter_action_buttons_tag' id='myBtn'><i class='la la-bar-chart'></i></div>
-                          <div class='filter_action_buttons_tag'><i class='la la-bar-chart'></i></div>
-                          <div class='filter_action_buttons_tag'><i class='la la-bar-chart'></i></div>
-                          <div class='filter_action_buttons_tag'><i class='la la-bar-chart'></i></div>
+                      <div class='sub_header_section'>
+                        <div class='filter_action_block'>
+                          <div><Button class='filter_action_block_buttons_active'>Order For You</Button></div>
+                          <div><Button class='filter_action_block_buttons_inactive'>OnGoin</Button></div>
+                          <div><Button class='filter_action_block_buttons_inactive'>Completed Orders</Button></div>
+                          <div><Button class='filter_action_block_buttons_inactive'>Pending Orders</Button></div>
                         </div>
-                        
+                        <div class=''></div>
                       </div>
                     </div>
                     <div class="data__body">
                       <div class="data__item">
-                        <div class="data__row">
-                          <div class="my_platform_data__cell data__cell_lg">
-                            <div class="data__main">
-                              <div class=''>
-                                <div class="data__content">Platform Name</div>
-                                <div class="data__label">Tech Sumo</div>
-                              </div>
-                              <div class="data__wrap" >
-                                <div class="data__preview color-red"><img src='img/user-1.jpg' style='border-radius:50%; width:29px' /></div>
-                              </div>
-                            </div>
+                        <div class="data__row" style='padding-bottom:7px'>
+                          <div class="data__cell mobile-text-right">
+                            <div class="data__content" style='margin-bottom:11px'>Task Name </div>
+                            <div class="data__label" style='font-weight:100'>Research</div>
                           </div>
-                          <div class="my_platform_data__cell mobile-text-right">
-                            <div class="data__content">Platform Type</div>
-                            <div class="data__label">Social Media</div>
+                          <div class="data__cell mobile-text-right">
+                            <div class="data__content" style='margin-bottom:11px'>Price</div>
+                            <div class="data__label" style='font-weight:100'>$ 150</div>
                           </div>
-                          <div class="my_platform_data__cell mobile-hide tab_hide">
-                            <div class="data__content">Platform</div>
-                            <div class="data__label">Youtube</div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Time Remaining</div>
+                            <div class="data__label" style='font-weight:100'>1d 2h</div>
                           </div>
-                          <div class="my_platform_data__cell mobile-hide tab_hide">
-                            <div class="data__content">Followers</div>
-                            <div class="data__label"><i class='la la-arrow-up'></i>7.18M</div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Priority</div>
+                            <div class="data__label" style='color:#ffd063'><i class='la la-arrow-up'></i>Medium</div>
                           </div>
-                          <div class="my_platform_data__cell mobile-hide tab_hide">
-                            <div class="data__content">Services</div>
-                            <div class="data__label">Advertisement, Promotion</div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Completed Date</div>
+                            <div class="data__label" style='font-weight:100; color:#b2b6be'>12 April 2021 </div>
                           </div>
-                          <div class="my_platform_data__cell mobile-hide">
-                            <Button class='active_button'>Active</Button>
+                          <div class="data__cell mobile-hid tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Order Date</div>
+                            <div class="data__label" style='font-weight:100; color:#b2b6be'>2 April 2021 </div>
                           </div>
-                          <div class="my_platform_data__cell mobile-hide">
-                            <Button class='edit_platform_button'>Edit Platform</Button>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='in_progress' >In Progress</Button>
+                          </div>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='submit_work'>Submit Work</Button>
+                          </div>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='view_order'><i class='la la-eye'></i></Button>
                           </div>
                         </div>
                       </div>
+
+
+                       <div class="data__item">
+                        <div class="data__row" style='padding-bottom:7px'>
+                          <div class="data__cell mobile-text-right">
+                            <div class="data__content" style='margin-bottom:11px'>Task Name </div>
+                            <div class="data__label" style='font-weight:100'>Research</div>
+                          </div>
+                          <div class="data__cell mobile-text-right">
+                            <div class="data__content" style='margin-bottom:11px'>Price</div>
+                            <div class="data__label" style='font-weight:100'>$ 150</div>
+                          </div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Time Remaining</div>
+                            <div class="data__label" style='font-weight:100'>1d 2h</div>
+                          </div>
+                           <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Priority</div>
+                            <div class="data__label" style='color:#5fda86'><i class='la la-arrow-down'></i>Low</div>
+                          </div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Completed Date</div>
+                            <div class="data__label" style='font-weight:100; color:#b2b6be'>12 April 2021 </div>
+                          </div>
+                          <div class="data__cell mobile-hid tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Order Date</div>
+                            <div class="data__label" style='font-weight:100; color:#b2b6be'>2 April 2021 </div>
+                          </div>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='todos_class' >To do</Button>
+                          </div>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='todo_view'>View</Button>
+                          </div>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='view_order'><i class='la la-eye'></i></Button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      
                       <div class="data__item">
-                        <div class="data__row">
-                          <div class="my_platform_data__cell data__cell_lg">
-                            <div class="data__main">
-                              <div class=''>
-                                <div class="data__content">Platform Name</div>
-                                <div class="data__label">Tech Sumo</div>
-                              </div>
-                              <div class="data__wrap" >
-                                <div class="data__preview color-red"><img src='img/user-1.jpg' style='border-radius:50%; width:29px' /></div>
-                              </div>
-                            </div>
+                        <div class="data__row" style='padding-bottom:7px'>
+                          <div class="data__cell mobile-text-right">
+                            <div class="data__content" style='margin-bottom:11px'>Task Name </div>
+                            <div class="data__label" style='font-weight:100'>Research</div>
                           </div>
-                          <div class="my_platform_data__cell mobile-text-right">
-                            <div class="data__content">Platform Type</div>
-                            <div class="data__label">Social Media</div>
+                          <div class="data__cell mobile-text-right">
+                            <div class="data__content" style='margin-bottom:11px'>Price</div>
+                            <div class="data__label" style='font-weight:100'>$ 150</div>
                           </div>
-                          <div class="my_platform_data__cell mobile-hide tab_hide">
-                            <div class="data__content">Platform</div>
-                            <div class="data__label">Youtube</div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Time Remaining</div>
+                            <div class="data__label" style='font-weight:100'>1d 2h</div>
                           </div>
-                          <div class="my_platform_data__cell mobile-hide tab_hide">
-                            <div class="data__content">Followers</div>
-                            <div class="data__label"><i class='la la-arrow-up'></i>7.18M</div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Priority</div>
+                            <div class="data__label" style='color:#ffd063'><i class='la la-arrow-up'></i>Medium</div>
                           </div>
-                          <div class="my_platform_data__cell mobile-hide tab_hide ">
-                            <div class="data__content">Services</div>
-                            <div class="data__label">Advertisement, Promotion</div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px;font-weight:100; color:#b2b6be'>Completed Date</div>
+                            <div class="data__label" style='font-weight:100; color:#b2b6be'>12 April 2021 </div>
                           </div>
-                          <div class="my_platform_data__cell mobile-hide">
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Order Date</div>
+                            <div class="data__label" style='font-weight:100; color:#b2b6be'>2 April 2021 </div>
+                          </div>
+                          <div class="data__cell my_mobile_hide">
+                            <Button style='color:#fff'>In Progress</Button>
+                          </div>
+                          <div class="data__cell my_mobile_hide" style='margin-left:17px'>
                             <Button class='pending_button'>Pending</Button>
                           </div>
-                          <div class="my_platform_data__cell mobile-hide">
-                            <Button class='edit_platform_button'>Edit Platform</Button>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='view_order'><i class='la la-eye'></i></Button>
                           </div>
                         </div>
                       </div>
                       <div class="data__item">
-                        <div class="data__row">
-                          <div class="my_platform_data__cell data__cell_lg">
-                            <div class="data__main">
-                              <div class=''>
-                                <div class="data__content">Platform Name</div>
-                                <div class="data__label">Tech Sumo</div>
-                              </div>
-                              <div class="data__wrap" >
-                                <div class="data__preview color-red"><img src='img/user-1.jpg' style='border-radius:50%; width:29px' /></div>
-                              </div>
-                            </div>
+                        <div class="data__row" style='padding-bottom:7px'>
+                          <div class="data__cell mobile-text-right">
+                            <div class="data__content" style='margin-bottom:11px'>Task Name </div>
+                            <div class="data__label" style='font-weight:100'>Research</div>
                           </div>
-                          <div class="my_platform_data__cell mobile-text-right">
-                            <div class="data__content">Platform Type</div>
-                            <div class="data__label">Social Media</div>
+                          <div class="data__cell mobile-text-right">
+                            <div class="data__content" style='margin-bottom:11px'>Price</div>
+                            <div class="data__label" style='font-weight:100'>$ 150</div>
                           </div>
-                          <div class="my_platform_data__cell mobile-hide tab_hide">
-                            <div class="data__content">Platform</div>
-                            <div class="data__label">Youtube</div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Time Remaining</div>
+                            <div class="data__label" style='font-weight:100'>1d 2h</div>
                           </div>
-                          <div class="my_platform_data__cell mobile-hide tab_hide">
-                            <div class="data__content">Followers</div>
-                            <div class="data__label"><i class='la la-arrow-up'></i>7.18M</div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Priority</div>
+                            <div class="data__label" style='color:#5fda86'><i class='la la-arrow-down'></i>Low</div>
                           </div>
-                          <div class="my_platform_data__cell mobile-hide tab_hide">
-                            <div class="data__content">Services</div>
-                            <div class="data__label">Advertisement, Promotion</div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Completed Date</div>
+                            <div class="data__label" style='font-weight:100; color:#b2b6be'>12 April 2021 </div>
                           </div>
-                          <div class="my_platform_data__cell mobile-hide">
-                            <Button class='Inactive_button'>Inactive</Button>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Order Date</div>
+                            <div class="data__label" style='font-weight:100; color:#b2b6be'>2 April 2021 </div>
                           </div>
-                          <div class="my_platform_data__cell mobile-hide">
-                            <Button class='edit_platform_button'>Edit Platform</Button>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='in_progress' style='margin-left:37px' >In Progress</Button>
                           </div>
-                        </div>
-                      </div>
-                      <div class="data__item">
-                        <div class="data__row">
-                          <div class="my_platform_data__cell data__cell_lg">
-                            <div class="data__main">
-                              <div class=''>
-                                <div class="data__content">Platform Name</div>
-                                <div class="data__label">Tech Sumo</div>
-                              </div>
-                              <div class="data__wrap" >
-                                <div class="data__preview color-red"><img src='img/user-1.jpg' style='border-radius:50%; width:29px' /></div>
-                              </div>
-                            </div>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='submit_work'>Submit Work</Button>
                           </div>
-                          <div class="my_platform_data__cell mobile-text-right">
-                            <div class="data__content">Platform Type</div>
-                            <div class="data__label">Social Media</div>
-                          </div>
-                          <div class="my_platform_data__cell mobile-hide tab_hide">
-                            <div class="data__content">Platform</div>
-                            <div class="data__label">Youtube</div>
-                          </div>
-                          <div class="my_platform_data__cell mobile-hide tab_hide">
-                            <div class="data__content">Followers</div>
-                            <div class="data__label"><i class='la la-arrow-up'></i>7.18M</div>
-                          </div>
-                          <div class="my_platform_data__cell mobile-hide tab_hide">
-                            <div class="data__content">Services</div>
-                            <div class="data__label">Advertisement, Promotion</div>
-                          </div>
-                          <div class="my_platform_data__cell mobile-hide">
-                            <Button class='pending_button'>Pending</Button>
-                          </div>
-                          <div class="my_platform_data__cell mobile-hide">
-                            <Button class='edit_platform_button'>Edit Platform</Button>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='view_order'><i class='la la-eye'></i></Button>
                           </div>
                         </div>
                       </div>
+                      
+                      
+                      
                     </div>
                   </div>
                 </div>
@@ -650,180 +613,23 @@
               </div>
             </div>
             <div class="panel__foot">
-              <div class="pager my_platform_footer"><a class="pager__arrow action action_icon_before" href="#"><i class="la la-angle-left "></i>Prev</a>
-                <div class="pager__list"><a class="pager__link action" href="#">1</a><a class="pager__link action" href="#">2</a><a class="pager__link action active" href="#">3</a><a class="pager__link action" href="#">4</a><a class="pager__link action" href="#">5</a></div><a class="pager__arrow action action_icon_after" href="#">Next<i class="la la-angle-right "></i></a>
+              <div class="pager new_pager">
+                <a class="pager__arrow action action_icon_before" href="#"><i class="la la-angle-left "></i>Prev</a>
+                <div class="pager__list">
+                  <a class="pager__link new_action action" href="#">1</a>
+                  <a class="pager__link new_action action" href="#">2</a>
+                  <a class="pager__link new_action action active" href="#">3</a>
+                  <a class="pager__link new_action action" href="#">4</a>
+                  <a class="pager__link new_action action" href="#">5</a>
+                </div>
+                <a class="pager__arrow action action_icon_after" href="#">Next<i class="la la-angle-right "></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    
-    <!-- modals-->
-   <!--  <div id="myModal" class="modal modal_md js-modal visible">
-      <div class="modal__container js-modal-container">
-      <div class='close'>close<i class='la la-close' style='margin-left:5px;margin-top: 2px;font-size: 13px;'></i></div>
-      <div class="modal-content">
-    
-
-        <table class="invoice__table table popup_modal">
-                  <thead>
-                    <tr>
-                      <th>Platform Name</th>
-                      <th>Platform Type</th>
-                      <th>Platform</th>
-                      <th>Followers</th>
-
-                      <th class="text-right">Services</th>
-                
-                    </tr>
-                     <tr>
-                      <th>Tech Sumo</th>
-                      <th>Social Media</th>
-                      <th>Youtube</th>
-                      <th><i class='la la-arrow-up'></i> 7.18M</th>
-                      <th class="text-right">Advertisement, Promotion</th>
-                     
-                    </tr>
-                    <tr>
-                      <th class="modal_sub_title"># No</th>
-                      <th class="modal_sub_title">Services</th>
-                      <th class="modal_sub_title">Publish Website Link</th>
-                      <th class="modal_sub_title">Also Share With</th>
-                      <th class="text-right modal_sub_title">Price</th>
-                     
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>#1 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                   <tr>
-                      <td>#2 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                     <tr>
-                      <td>#3 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                     <tr>
-                      <td>#4 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                  </tbody>
-                </table>
- 
-      </div>
-      </div>
-    </div> -->
-
-    <div id="myModal" class="modal modal_width_set js-modal visible">
-      <div class="modal__container js-modal-container">
-        <div class='close'>close<i class='la la-close' style='margin-left:5px;margin-top: 2px;font-size: 13px;'></i></div>
-        <div class="modal__body">
-          <!-- invoice-->
-          <div class="invoice">
-            <div class="">
-              
-              <div class="invoice__inner">
-                
-                <!-- table-->
-                <table class="invoice__table table popup_modal">
-                  <thead>
-                        <tr class="popup_header">
-                      <th>Platform Name</th>
-                      <th>Platform Type</th>
-                      <th>Platform</th>
-                      <th>Followers</th>
-
-                      <th class="text-right">Services</th>
-                
-                    </tr>
-                     <tr>
-                      <th>Tech Sumo</th>
-                      <th>Social Media</th>
-                      <th>Youtube</th>
-                      <th><i class='la la-arrow-up'></i> 7.18M</th>
-                      <th class="text-right">Advertisement, Promotion</th>
-                     
-                    </tr>
-                    <tr>
-                         <th class="modal_sub_title"># No</th>
-                      <th class="modal_sub_title">Services</th>
-                      <th class="modal_sub_title">Publish Website Link</th>
-                      <th class="modal_sub_title">Also Share With</th>
-                      <th class="text-right modal_sub_title">Price</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>#1 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                     <td>#1 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                       <td>#1 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                      <td>#1 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                  
-                  </tbody>
-                </table>
-              </div>
-            </div><!-- chat-->
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <script>
-      var modal = document.getElementById("myModal");
-      var btn = document.getElementById("myBtn");
-      var span = document.getElementsByClassName("close")[0];
-      btn.onclick = function() {
-        modal.style.display = "block";
-      }
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-    </script>
+    </div><!-- modals-->
+    <!-- scripts-->
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/datepicker.min.js"></script>
     <script src="js/lib/datepicker.en.js"></script>

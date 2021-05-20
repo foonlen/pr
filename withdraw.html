@@ -44,19 +44,23 @@
               <!-- mobile primary menu-->
               <div class="nav__primary js-nav-primary">
                 <div class="nav__group">
-                    <a class="nav__link active" href="#" title="Dashboard">
+                    <a class="nav__link active" href="dashboard.html" title="Dashboard">
                         <div class="nav__preview"><i class="la la-tachometer-alt "></i></div>
                         <div class="nav__title">Dashboard</div>
                     </a>
-                    <a class="nav__link" href="#" title="Projects">
+                    <a class="nav__link" href="orders.html" title="Projects">
                         <div class="nav__preview"><i class="la la-toolbox "></i></div>
                         <div class="nav__title">My Orders</div>
-                    </a><a class="nav__link" href="#" title="Tasks">
+                    </a><a class="nav__link" href="platform.html" title="Tasks">
                         <div class="nav__preview"><i class="la la-clipboard-check "></i></div>
                         <div class="nav__title">Platform</div>
-                    </a><a class="nav__link" href="#" title="Kanban">
+                    </a><a class="nav__link" href="wallet.html" title="Kanban">
                         <div class="nav__preview"><i class="la la-images "></i></div>
                         <div class="nav__title">Wallet</div>
+                    </a>
+                    <a class="nav__link" href="reports.html" title="Kanban">
+                      <div class="nav__preview"><i class="la la-images "></i></div>
+                      <div class="nav__title">Reports</div>
                     </a>
                 </div>
               </div>
@@ -64,65 +68,25 @@
           </nav>
         </div>
       </div>
-      <div class="container js-container">
+      <div class="container js-container withdrawpage">
         <div class="container__head">
-          <div class="container__title back_to_my_projects" ><a href='MyPlatform.html'><i class='la la-arrow-left' style='margin-left:10px'></i><span class='back_to_my_project_span'>Back to Projects</span></a></div>
-          <div class="container__search search js-search"><button class="search__action action js-search-open"><i class="la la-bell"></i></button>
-            <div class="search__dropdown js-search-dropdown">
-              <div class="search__field"><input class="search__input js-search-input" type="search" placeholder="Start typing…">
-                <div class="search__icon"><i class="la la-bell"></i></div>
-              </div>
-              <div class="search__results js-search-results"><a class="search__result" href="#">
-                  <div class="search__cell">
-                    <div class="search__preview color-red"><i class="lab la-dribbble "></i></div>
-                  </div>
-                  <div class="search__cell">
-                    <div class="search__title">Dribble Redesign</div>
-                    <div class="search__text">Webdesign</div>
-                  </div>
-                  <div class="search__cell mobile-hide">
-                    <!-- tag-->
-                    <div class="search__tag tag gray">24 Feb 2019</div>
-                  </div>
-                </a><a class="search__result" href="#">
-                  <div class="search__cell">
-                    <div class="search__preview color-green"><i class="lab la-evernote "></i></div>
-                  </div>
-                  <div class="search__cell">
-                    <div class="search__title">New HTML Theme</div>
-                    <div class="search__text">Theme</div>
-                  </div>
-                  <div class="search__cell mobile-hide">
-                    <!-- tag-->
-                    <div class="search__tag tag gray">20 May 2019</div>
-                  </div>
-                </a><a class="search__result" href="#">
-                  <div class="search__cell">
-                    <div class="search__preview"><img class="search__pic" src="img/user-1.jpg" alt="User"></div>
-                  </div>
-                  <div class="search__cell">
-                    <div class="search__title">Bradley Wilkins</div>
-                    <div class="search__text">b.wilkins@gmail.com</div>
-                  </div>
-                  <div class="search__cell mobile-hide">
-                    <!-- tag-->
-                    <div class="search__tag tag gray">Designer</div>
-                  </div>
-                </a></div>
-            </div>
+          <div class="container__title back_to_my_projects" ><a href='MyPlatform.html'><i class='la la-arrow-left' style='margin-left:10px'></i>Back<span class='back_to_my_project_span'> to Projects</span></a></div>
+          <div class="container__search search js-search">
+<button class="top-cards-bell"><i class="la la-bell"></i></button>
+            
             <div class="search__backdrop backdrop js-search-backdrop"></div>
           </div>
           <!-- new-->
           <div class="container__new new js-new" style='border:0px'>
             <button class="new__action action js-new-open" style='padding:10px 20px;'>
-              <img src='img/user-1.jpg' width='20' style='border-radius:50%; margin-left: -10px;margin-right:7px'/><p class='evan_yates'>Evan Yates</p><i class="la la-angle-down" style='margin-left:12px'></i>
+              <img src='img/user-1.jpg' width='20' style='border-radius:50%; margin-left: -10px;margin-right:7px'/><p class="profile_username">Evan Yates</p><i class="la la-angle-down" style='margin-left:12px'></i>
             </button>
             <div class="new__dropdown js-new-dropdown">
-              <a class="new__item" href="#">
+              <a class="new__item" href="profile.html">
                 <div class="new__icon"><i class="la la-toolbox "></i></div>
                 <div class="new__title">Profile</div>
               </a>
-              <a class="new__item" href="#">
+              <a class="new__item" href="wallet.html">
                 <div class="new__icon"><i class="la la-clipboard-check "></i></div>
                 <div class="new__title">Wallet</div>
               </a>
@@ -130,7 +94,7 @@
                 <div class="new__icon"><i class="la la-user-lock "></i></div>
                 <div class="new__title">Updates</div>
               </a>
-              <a class="new__item" href="#">
+              <a class="new__item" href="index.html">
                 <div class="new__icon"><i class="la la-calendar-week "></i></div>
                 <div class="new__title">Logout</div>
               </a>

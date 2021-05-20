@@ -44,16 +44,20 @@
             <div class="nav__list">
               <!-- mobile primary menu-->
               <div class="nav__primary js-nav-primary">
-                <div class="nav__group"><a class="nav__link active" href="#" title="Dashboard">
+                <div class="nav__group">
+                  <a class="nav__link active" href="dashboard.html" title="Dashboard">
                     <div class="nav__preview"><i class="la la-tachometer-alt "></i></div>
                     <div class="nav__title">Dashboard</div>
-                  </a><a class="nav__link" href="#" title="Projects">
+                  </a>
+                  <a class="nav__link" href="orders.html" title="orders">
                     <div class="nav__preview"><i class="la la-toolbox "></i></div>
                     <div class="nav__title">My Orders</div>
-                  </a><a class="nav__link" href="#" title="Tasks">
+                  </a>
+                  <a class="nav__link" href="platform.html" title="platform">
                     <div class="nav__preview"><i class="la la-clipboard-check "></i></div>
                     <div class="nav__title">Platform</div>
-                  </a><a class="nav__link" href="#" title="Kanban">
+                  </a>
+                  <a class="nav__link" href="wallet.html" title="wallet">
                     <div class="nav__preview"><i class="la la-images "></i></div>
                     <div class="nav__title">Wallet</div>
                   </a>
@@ -64,65 +68,24 @@
         </div>
       </div>
       <!-- container-->
-      <div class="container js-container">
+      <div class="container js-container addnewplatform">
         <div class="container__head">
           <div class="container__title back_to_my_projects" ><a href='MyPlatform.html'><i class='la la-arrow-left' style='margin-left:10px'></i> Back <span class='back_to_my_project_span'>to Projects</span></a></div>
-          <div class="container__search search js-search"><button class="search__action action js-search-open"><i class="la la-bell "></i></button>
-            <div class="search__dropdown js-search-dropdown">
-              <div class="search__field"><input class="search__input js-search-input" type="search" placeholder="Start typing…">
-                <div class="search__icon"><i class="la la-bell "></i></div>
-              </div>
-              <div class="search__results js-search-results"><a class="search__result" href="#">
-                  <div class="search__cell">
-                    <div class="search__preview color-red"><i class="lab la-dribbble "></i></div>
-                  </div>
-                  <div class="search__cell">
-                    <div class="search__title">Dribble Redesign</div>
-                    <div class="search__text">Webdesign</div>
-                  </div>
-                  <div class="search__cell mobile-hide">
-                    <!-- tag-->
-                    <div class="search__tag tag gray">24 Feb 2019</div>
-                  </div>
-                </a><a class="search__result" href="#">
-                  <div class="search__cell">
-                    <div class="search__preview color-green"><i class="lab la-evernote "></i></div>
-                  </div>
-                  <div class="search__cell">
-                    <div class="search__title">New HTML Theme</div>
-                    <div class="search__text">Theme</div>
-                  </div>
-                  <div class="search__cell mobile-hide">
-                    <!-- tag-->
-                    <div class="search__tag tag gray">20 May 2019</div>
-                  </div>
-                </a><a class="search__result" href="#">
-                  <div class="search__cell">
-                    <div class="search__preview"><img class="search__pic" src="img/user-1.jpg" alt="User"></div>
-                  </div>
-                  <div class="search__cell">
-                    <div class="search__title">Bradley Wilkins</div>
-                    <div class="search__text">b.wilkins@gmail.com</div>
-                  </div>
-                  <div class="search__cell mobile-hide">
-                    <!-- tag-->
-                    <div class="search__tag tag gray">Designer</div>
-                  </div>
-                </a></div>
-            </div>
-            <div class="search__backdrop backdrop js-search-backdrop"></div>
+          <div class="container__search search js-search">
+            <button class="top-cards-bell"><i class="la la-bell"></i></button>
+           <div class="search__backdrop backdrop js-search-backdrop"></div>
           </div>
           <!-- new-->
           <div class="container__new new js-new">
-            <button class="new__action action js-new-open" style='padding:10px 20px;'>
-              <img src='img/user-1.jpg' width='20' style='border-radius:50%; margin-left: -10px;margin-right:7px'/>Evan Yates<i class="la la-angle-down" style='margin-left:12px'></i>
+            <button class="new__action action js-new-open profile_view_space">
+              <img src='img/user-1.jpg' width='20' style='border-radius:50%; margin-left: -10px;margin-right:7px'/><p class="profile_username">Evan Yates</p><i class="la la-angle-down" style='margin-left:12px'></i>
             </button>
             <div class="new__dropdown js-new-dropdown">
-              <a class="new__item" href="#">
+              <a class="new__item" href="profile.html">
                 <div class="new__icon"><i class="la la-toolbox "></i></div>
                 <div class="new__title">Profile</div>
               </a>
-              <a class="new__item" href="#">
+              <a class="new__item" href="wallet.html">
                 <div class="new__icon"><i class="la la-clipboard-check "></i></div>
                 <div class="new__title">Wallet</div>
               </a>
@@ -130,7 +93,7 @@
                 <div class="new__icon"><i class="la la-user-lock "></i></div>
                 <div class="new__title">Updates</div>
               </a>
-              <a class="new__item" href="#">
+              <a class="new__item" href="index.html">
                 <div class="new__icon"><i class="la la-calendar-week "></i></div>
                 <div class="new__title">Logout</div>
               </a>
@@ -218,53 +181,11 @@
               </form>
 
 
-                 <!--  <div class='services_block_left'>
-                    <div class="field auth__field">
-                      <div class="field__label">Services</div>
-                      <div class="field__wrap">
-                        <div class="container__new new js-new contributer_container" style='margin-right:10px; margin-left:-9px'>
-                          <button class="new__action action js-new-open contributer" style='padding:10px 20px;height: 33px; font-weight: 100; color:#b5bac1;'>
-                            <div class=''>Contributers</div>
-                            <div class=''><i class="la la-angle-down"></i></div>
-                            
-                          </button>
-                          <div class="new__dropdown js-new-dropdown">
-                            <a class="new__item" href="#">
-                              <div class="new__icon"><i class="la la-toolbox "></i></div>
-                              <div class="new__title">Profile</div>
-                            </a>
-                            <a class="new__item" href="#">
-                              <div class="new__icon"><i class="la la-clipboard-check "></i></div>
-                              <div class="new__title">Wallet</div>
-                            </a>
-                            <a class="new__item" href="#">
-                              <div class="new__icon"><i class="la la-user-lock "></i></div>
-                              <div class="new__title">Updates</div>
-                            </a>
-                            <a class="new__item" href="#">
-                              <div class="new__icon"><i class="la la-calendar-week "></i></div>
-                              <div class="new__title">Logout</div>
-                            </a>
-                          </div>
-                          <div class="new__backdrop backdrop js-new-backdrop"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="field auth__field price_design">
-                      <div class="field__label">Price</div>
-                      <div class="field__wrap"><input class="field__input" type="email" placeholder="Design" style='font-weight: normal; color:#b5bac1; box-shadow: 0 0 5px #ddd; height:37px'>
-                      </div>
-                    </div>
-                    <div class="field auth__field">
-                      <div class="field__label">Reference Link</div>
-                      <div class="field__wrap"><input class="field__input" type="email" placeholder="Design" class='reference_link_input' style='font-weight: normal; color:#b5bac1; box-shadow: 0 0 5px #ddd;height:37px'>
-                      </div>
-                    </div>
-                  </div> -->
+                 
                   <Button class='add_services'><i class='la la-plus' style='margin-right:10px'></i>Add these Services</Button>
                 </div>
               </div>
-              <!-- panel-->
+              
               <div class="layout__panel" style='margin-top:19px; box-shadow:0 0 0px #ddd'>
                 <div class="panel__body panel__body_bg">
                   <div class='services_share_link_block'>

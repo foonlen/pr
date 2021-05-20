@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Orders</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Page description"><!-- Twitter Card data-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="Page Title">
+    <meta name="twitter:description" content="Page description less than 200 characters">
+    <meta name="twitter:creator" content="@author_handle">
+    <meta name="twitter:image" content="http://www.example.com/image.jpg"><!-- Open Graph data-->
+    <meta property="og:title" content="Title Here">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://www.example.com/">
+    <meta property="og:image" content="http://example.com/image.jpg">
+    <meta property="og:description" content="Description Here">
+    <meta property="og:site_name" content="Site Name, i.e. Moz">
+    <meta property="fb:admins" content="Facebook numeric ID">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="css/app.css"><!-- favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+  </head>
+  <body>
+    <!-- page-->
+    <div class="page">
+      <!-- sidebar-->
+      <div class="sidebar js-sidebar">
+        <div class="sidebar__nav">
+          <!-- nav-->
+          <nav class="nav js-nav"><a class="nav__link nav__link_head" href="/">
+              <div class="my_nav__preview"><img class="nav__pic" src="img/coinpedia1.png" alt="Logo"></div>
+              
+            </a>
+            <div class="nav__list">
+              <!-- mobile primary menu-->
+              <div class="nav__primary js-nav-primary">
+                <div class="nav__group"><a class="nav__link active" href="#" title="Dashboard">
+                    <div class="nav__preview"><i class="la la-tachometer-alt "></i></div>
+                    <div class="nav__title">Dashboard</div>
+                  </a><a class="nav__link" href="#" title="Projects">
+                    <div class="nav__preview"><i class="la la-toolbox "></i></div>
+                    <div class="nav__title">My Orders</div>
+                  </a><a class="nav__link" href="#" title="Tasks">
+                    <div class="nav__preview"><i class="la la-clipboard-check "></i></div>
+                    <div class="nav__title">Platform</div>
+                  </a><a class="nav__link" href="#" title="Kanban">
+                    <div class="nav__preview"><i class="la la-images "></i></div>
+                    <div class="nav__title">Wallet</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="container js-container">
+        <div class="container__head">
+          <div class="container__title title title_md">
+            <div class='top_search'>
+              <i class='la la-search'></i><input type='text' placeholder='Search' class='top_search_input' />
+            </div>
+          </div>
+          <div class="container__search search js-search"><button class="search__action action js-search-open"><i class="la la-bell"></i></button>
+            <div class="search__dropdown js-search-dropdown">
+              <div class="search__field"><input class="search__input js-search-input" type="search" placeholder="Start typing…">
+                <div class="search__icon"><i class="la la-bell"></i></div>
+              </div>
+              <div class="search__results js-search-results"><a class="search__result" href="#">
+                  <div class="search__cell">
+                    <div class="search__preview color-red"><i class="lab la-dribbble "></i></div>
+                  </div>
+                  <div class="search__cell">
+                    <div class="search__title">Dribble Redesign</div>
+                    <div class="search__text">Webdesign</div>
+                  </div>
+                  <div class="search__cell mobile-hide">
+                    <!-- tag-->
+                    <div class="search__tag tag gray">24 Feb 2019</div>
+                  </div>
+                </a><a class="search__result" href="#">
+                  <div class="search__cell">
+                    <div class="search__preview color-green"><i class="lab la-evernote "></i></div>
+                  </div>
+                  <div class="search__cell">
+                    <div class="search__title">New HTML Theme</div>
+                    <div class="search__text">Theme</div>
+                  </div>
+                  <div class="search__cell mobile-hide">
+                    <!-- tag-->
+                    <div class="search__tag tag gray">20 May 2019</div>
+                  </div>
+                </a><a class="search__result" href="#">
+                  <div class="search__cell">
+                    <div class="search__preview"><img class="search__pic" src="img/user-1.jpg" alt="User"></div>
+                  </div>
+                  <div class="search__cell">
+                    <div class="search__title">Bradley Wilkins</div>
+                    <div class="search__text">b.wilkins@gmail.com</div>
+                  </div>
+                  <div class="search__cell mobile-hide">
+                    <!-- tag-->
+                    <div class="search__tag tag gray">Designer</div>
+                  </div>
+                </a></div>
+            </div>
+            <div class="search__backdrop backdrop js-search-backdrop"></div>
+          </div>
+          <!-- new-->
+          <div class="container__new new js-new" style='border:0px'>
+            <button class="new__action action js-new-open user_my_orders" style='padding:10px 20px;border:0px'>
+              <img src='img/user-1.jpg' width='20' style='border-radius:50%; margin-left: -10px;margin-right:7px'/><p class='evan_yates'>Evan Yates</p><i class="la la-angle-down" style='margin-left:12px'></i>
+            </button>
+            <div class="new__dropdown js-new-dropdown">
+              <a class="new__item" href="#">
+                <div class="new__icon"><i class="la la-toolbox "></i></div>
+                <div class="new__title">Profile</div>
+              </a>
+              <a class="new__item" href="#">
+                <div class="new__icon"><i class="la la-clipboard-check "></i></div>
+                <div class="new__title">Wallet</div>
+              </a>
+              <a class="new__item" href="#">
+                <div class="new__icon"><i class="la la-user-lock "></i></div>
+                <div class="new__title">Updates</div>
+              </a>
+              <a class="new__item" href="#">
+                <div class="new__icon"><i class="la la-calendar-week "></i></div>
+                <div class="new__title">Logout</div>
+              </a>
+            </div>
+            <div class="new__backdrop backdrop js-new-backdrop"></div>
+          </div>
+        </div>
+        <div class="container__body">
+          
+          <div class="table_panel js-panel" style='padding: 8px 18px'>
+            <div class="panel__head panel__head_line">
+              <div class="sub_title">
+                <p class='my_orders_title'>My Orders</p>
+                <p>Here you will add the details of orders</p>
+              </div>
+              <div class="panel__group">
+                <div class="sort js-sort">
+                  <div class="">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel__body">
+              <div class="panel__tab js-panel-tab" style="display: block">
+                <!-- data-->
+                <div class="data data_list">
+                  <div class="data__container">
+                    <div class="My_data__head">
+                      <div class='sub_header_section'>
+                        <div class='filter_action_block'>
+                          <div><Button class='filter_action_block_buttons_active'>Order For You</Button></div>
+                          <div><Button class='filter_action_block_buttons_inactive'>OnGoin</Button></div>
+                          <div><Button class='filter_action_block_buttons_inactive'>Completed Orders</Button></div>
+                          <div><Button class='filter_action_block_buttons_inactive'>Pending Orders</Button></div>
+                        </div>
+                        <div class=''></div>
+                      </div>
+                    </div>
+                    <div class="data__body">
+                      <div class="data__item">
+                        <div class="data__row" style='padding-bottom:7px'>
+                          <div class="data__cell mobile-text-right">
+                            <div class="data__content" style='margin-bottom:11px'>Task Name </div>
+                            <div class="data__label" style='font-weight:100'>Research</div>
+                          </div>
+                          <div class="data__cell mobile-text-right">
+                            <div class="data__content" style='margin-bottom:11px'>Price</div>
+                            <div class="data__label" style='font-weight:100'>$ 150</div>
+                          </div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Time Remaining</div>
+                            <div class="data__label" style='font-weight:100'>1d 2h</div>
+                          </div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Priority</div>
+                            <div class="data__label" style='color:#ffd063'><i class='la la-arrow-up'></i>Medium</div>
+                          </div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Completed Date</div>
+                            <div class="data__label" style='font-weight:100; color:#b2b6be'>12 April 2021 </div>
+                          </div>
+                          <div class="data__cell mobile-hid tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Order Date</div>
+                            <div class="data__label" style='font-weight:100; color:#b2b6be'>2 April 2021 </div>
+                          </div>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='in_progress' >In Progress</Button>
+                          </div>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='submit_work'>Submit Work</Button>
+                          </div>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='view_order'><i class='la la-eye'></i></Button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="data__item">
+                        <div class="data__row" style='padding-bottom:7px'>
+                          <div class="data__cell mobile-text-right">
+                            <div class="data__content" style='margin-bottom:11px'>Task Name </div>
+                            <div class="data__label" style='font-weight:100'>Research</div>
+                          </div>
+                          <div class="data__cell mobile-text-right">
+                            <div class="data__content" style='margin-bottom:11px'>Price</div>
+                            <div class="data__label" style='font-weight:100'>$ 150</div>
+                          </div>
+                          <div class="data__cell mobile-hide tab_hide ">
+                            <div class="data__content" style='margin-bottom:11px'>Time Remaining</div>
+                            <div class="data__label" style='font-weight:100'>1d 2h</div>
+                          </div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Priority</div>
+                            <div class="data__label" style='color:#5fda86'><i class='la la-arrow-down'></i>Low</div>
+                          </div>
+                          <div class="data__cell mobile-hide tab_hide ">
+                            <div class="data__content" style='margin-bottom:11px'>Completed Date</div>
+                            <div class="data__label" style='font-weight:100; color:#b2b6be'>12 April 2021 </div>
+                          </div>
+                          <div class="data__cell mobile-hide tab_hide ">
+                            <div class="data__content" style='margin-bottom:11px'>Order Date</div>
+                            <div class="data__label" style='font-weight:100; color:#b2b6be'>2 April 2021 </div>
+                          </div>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='to_do'>To do</Button>
+                          </div>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='view_button'>View</Button>
+                          </div>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='view_order'><i class='la la-eye'></i></Button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="data__item">
+                        <div class="data__row" style='padding-bottom:7px'>
+                          <div class="data__cell mobile-text-right">
+                            <div class="data__content" style='margin-bottom:11px'>Task Name </div>
+                            <div class="data__label" style='font-weight:100'>Research</div>
+                          </div>
+                          <div class="data__cell mobile-text-right">
+                            <div class="data__content" style='margin-bottom:11px'>Price</div>
+                            <div class="data__label" style='font-weight:100'>$ 150</div>
+                          </div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Time Remaining</div>
+                            <div class="data__label" style='font-weight:100'>1d 2h</div>
+                          </div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Priority</div>
+                            <div class="data__label" style='color:#ffd063'><i class='la la-arrow-up'></i>Medium</div>
+                          </div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px;font-weight:100; color:#b2b6be'>Completed Date</div>
+                            <div class="data__label" style='font-weight:100; color:#b2b6be'>12 April 2021 </div>
+                          </div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Order Date</div>
+                            <div class="data__label" style='font-weight:100; color:#b2b6be'>2 April 2021 </div>
+                          </div>
+                          <div class="data__cell my_mobile_hide">
+                            <Button style='color:#fff'>In Progress</Button>
+                          </div>
+                          <div class="data__cell my_mobile_hide" style='margin-left:17px'>
+                            <Button class='pending_button'>Pending</Button>
+                          </div>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='view_order'><i class='la la-eye'></i></Button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="data__item">
+                        <div class="data__row" style='padding-bottom:7px'>
+                          <div class="data__cell mobile-text-right">
+                            <div class="data__content" style='margin-bottom:11px'>Task Name </div>
+                            <div class="data__label" style='font-weight:100'>Research</div>
+                          </div>
+                          <div class="data__cell mobile-text-right">
+                            <div class="data__content" style='margin-bottom:11px'>Price</div>
+                            <div class="data__label" style='font-weight:100'>$ 150</div>
+                          </div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Time Remaining</div>
+                            <div class="data__label" style='font-weight:100'>1d 2h</div>
+                          </div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Priority</div>
+                            <div class="data__label" style='color:#5fda86'><i class='la la-arrow-down'></i>Low</div>
+                          </div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Completed Date</div>
+                            <div class="data__label" style='font-weight:100; color:#b2b6be'>12 April 2021 </div>
+                          </div>
+                          <div class="data__cell mobile-hide tab_hide">
+                            <div class="data__content" style='margin-bottom:11px'>Order Date</div>
+                            <div class="data__label" style='font-weight:100; color:#b2b6be'>2 April 2021 </div>
+                          </div>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='in_progress' style='margin-left:37px' >In Progress</Button>
+                          </div>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='submit_work'>Submit Work</Button>
+                          </div>
+                          <div class="data__cell my_mobile_hide">
+                            <Button class='view_order'><i class='la la-eye'></i></Button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel__tab js-panel-tab" style="display: none">
+                <!-- data-->
+                <div class="data data_grid">
+                  <div class="data__container">
+                    <div class="data__head">
+                      <div class="data__row">
+                        <div class="data__cell">
+                          <div class="data__filter">Projects<i class="la la-sort-alpha-down "></i></div>
+                        </div>
+                        <div class="data__cell">
+                          <div class="data__filter">Tasks<i class="la la-sort-alpha-down "></i></div>
+                        </div>
+                        <div class="data__cell">
+                          <div class="data__filter">Due Date<i class="la la-sort-alpha-down "></i></div>
+                        </div>
+                        <div class="data__cell">
+                          <div class="data__filter">Members<i class="la la-sort-alpha-down "></i></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="data__body">
+                      <div class="data__item">
+                        <div class="data__corner data__corner_left">
+                          <!-- progress-->
+                          <div class="progress">
+                            <div class="progress__value bg-green-raw" style="width: 70%"></div>
+                          </div>
+                        </div>
+                        <div class="data__corner">
+                          <!-- action--><button class="action action_stroke"><i class="la la-ellipsis-h "></i></button></div>
+                        <div class="data__row">
+                          <div class="data__cell">
+                            <div class="data__main">
+                              <div class="data__preview color-red"><i class="la la-dribbble "></i></div>
+                              <div class="data__wrap">
+                                <div class="data__content"><strong>Dribble Website</strong></div>
+                                <div class="data__label">Development</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="data__cell">
+                            <div class="data__content"><strong>90</strong> / 90</div>
+                            <div class="data__label">Tasks</div>
+                          </div>
+                          <div class="data__cell">
+                            <!-- members-->
+                            <div class="members data__members">
+                              <div class="members__item"><img class="members__pic" src="img/user-1.jpg" alt="User" /></div>
+                              <div class="members__item"><img class="members__pic" src="img/user-2.jpg" alt="User" /></div>
+                              <div class="members__item"><img class="members__pic" src="img/user-3.jpg" alt="User" /></div>
+                              <div class="members__item">
+                                <div class="members__counter">+5</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="data__item">
+                        <div class="data__corner data__corner_left">
+                          <!-- progress-->
+                          <div class="progress">
+                            <div class="progress__value bg-green-raw" style="width: 70%"></div>
+                          </div>
+                        </div>
+                        <div class="data__corner">
+                          <!-- action--><button class="action action_stroke"><i class="la la-ellipsis-h "></i></button></div>
+                        <div class="data__row">
+                          <div class="data__cell">
+                            <div class="data__main">
+                              <div class="data__preview color-green"><i class="lab la-evernote "></i></div>
+                              <div class="data__wrap">
+                                <div class="data__content"><strong>Theme Development</strong></div>
+                                <div class="data__label">Development</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="data__cell">
+                            <div class="data__content"><strong>90</strong> / 90</div>
+                            <div class="data__label">Tasks</div>
+                          </div>
+                          <div class="data__cell">
+                            <!-- members-->
+                            <div class="members data__members">
+                              <div class="members__item"><img class="members__pic" src="img/user-1.jpg" alt="User" /></div>
+                              <div class="members__item"><img class="members__pic" src="img/user-2.jpg" alt="User" /></div>
+                              <div class="members__item"><img class="members__pic" src="img/user-3.jpg" alt="User" /></div>
+                              <div class="members__item">
+                                <div class="members__counter">+5</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="data__item">
+                        <div class="data__corner data__corner_left">
+                          <!-- progress-->
+                          <div class="progress">
+                            <div class="progress__value bg-green-raw" style="width: 70%"></div>
+                          </div>
+                        </div>
+                        <div class="data__corner">
+                          <!-- action--><button class="action action_stroke"><i class="la la-ellipsis-h "></i></button></div>
+                        <div class="data__row">
+                          <div class="data__cell">
+                            <div class="data__main">
+                              <div class="data__preview color-blue"><i class="la la-dropbox "></i></div>
+                              <div class="data__wrap">
+                                <div class="data__content"><strong>Dropbox App Design</strong></div>
+                                <div class="data__label">Design</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="data__cell">
+                            <div class="data__content"><strong>90</strong> / 90</div>
+                            <div class="data__label">Tasks</div>
+                          </div>
+                          <div class="data__cell">
+                            <!-- members-->
+                            <div class="members data__members">
+                              <div class="members__item"><img class="members__pic" src="img/user-1.jpg" alt="User" /></div>
+                              <div class="members__item"><img class="members__pic" src="img/user-2.jpg" alt="User" /></div>
+                              <div class="members__item"><img class="members__pic" src="img/user-3.jpg" alt="User" /></div>
+                              <div class="members__item">
+                                <div class="members__counter">+5</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="data__item">
+                        <div class="data__corner data__corner_left">
+                          <!-- progress-->
+                          <div class="progress">
+                            <div class="progress__value bg-green-raw" style="width: 70%"></div>
+                          </div>
+                        </div>
+                        <div class="data__corner">
+                          <!-- action--><button class="action action_stroke"><i class="la la-ellipsis-h "></i></button></div>
+                        <div class="data__row">
+                          <div class="data__cell">
+                            <div class="data__main">
+                              <div class="data__preview color-red"><i class="lab la-airbnb "></i></div>
+                              <div class="data__wrap">
+                                <div class="data__content"><strong>Airbnb Development</strong></div>
+                                <div class="data__label">Development</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="data__cell">
+                            <div class="data__content"><strong>90</strong> / 90</div>
+                            <div class="data__label">Tasks</div>
+                          </div>
+                          <div class="data__cell">
+                            <!-- members-->
+                            <div class="members data__members">
+                              <div class="members__item"><img class="members__pic" src="img/user-1.jpg" alt="User" /></div>
+                              <div class="members__item"><img class="members__pic" src="img/user-2.jpg" alt="User" /></div>
+                              <div class="members__item"><img class="members__pic" src="img/user-3.jpg" alt="User" /></div>
+                              <div class="members__item">
+                                <div class="members__counter">+5</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="data__item">
+                        <div class="data__corner data__corner_left">
+                          <!-- progress-->
+                          <div class="progress">
+                            <div class="progress__value bg-green-raw" style="width: 70%"></div>
+                          </div>
+                        </div>
+                        <div class="data__corner">
+                          <!-- action--><button class="action action_stroke"><i class="la la-ellipsis-h "></i></button></div>
+                        <div class="data__row">
+                          <div class="data__cell">
+                            <div class="data__main">
+                              <div class="data__preview color-green"><i class="lab la-kickstarter-k "></i></div>
+                              <div class="data__wrap">
+                                <div class="data__content"><strong>Kickstarter Campaign</strong></div>
+                                <div class="data__label">Marketing</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="data__cell">
+                            <div class="data__content"><strong>90</strong> / 90</div>
+                            <div class="data__label">Tasks</div>
+                          </div>
+                          <div class="data__cell">
+                            <!-- members-->
+                            <div class="members data__members">
+                              <div class="members__item"><img class="members__pic" src="img/user-1.jpg" alt="User" /></div>
+                              <div class="members__item"><img class="members__pic" src="img/user-2.jpg" alt="User" /></div>
+                              <div class="members__item"><img class="members__pic" src="img/user-3.jpg" alt="User" /></div>
+                              <div class="members__item">
+                                <div class="members__counter">+5</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="data__item">
+                        <div class="data__corner data__corner_left">
+                          <!-- progress-->
+                          <div class="progress">
+                            <div class="progress__value bg-green-raw" style="width: 70%"></div>
+                          </div>
+                        </div>
+                        <div class="data__corner">
+                          <!-- action--><button class="action action_stroke"><i class="la la-ellipsis-h "></i></button></div>
+                        <div class="data__row">
+                          <div class="data__cell">
+                            <div class="data__main">
+                              <div class="data__preview color-red"><i class="la la-pinterest-p "></i></div>
+                              <div class="data__wrap">
+                                <div class="data__content"><strong>Pinterest Promotion</strong></div>
+                                <div class="data__label">Social</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="data__cell">
+                            <div class="data__content"><strong>90</strong> / 90</div>
+                            <div class="data__label">Tasks</div>
+                          </div>
+                          <div class="data__cell">
+                            <!-- members-->
+                            <div class="members data__members">
+                              <div class="members__item"><img class="members__pic" src="img/user-1.jpg" alt="User" /></div>
+                              <div class="members__item"><img class="members__pic" src="img/user-2.jpg" alt="User" /></div>
+                              <div class="members__item"><img class="members__pic" src="img/user-3.jpg" alt="User" /></div>
+                              <div class="members__item">
+                                <div class="members__counter">+5</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="data__item">
+                        <div class="data__corner data__corner_left">
+                          <!-- progress-->
+                          <div class="progress">
+                            <div class="progress__value bg-green-raw" style="width: 70%"></div>
+                          </div>
+                        </div>
+                        <div class="data__corner">
+                          <!-- action--><button class="action action_stroke"><i class="la la-ellipsis-h "></i></button></div>
+                        <div class="data__row">
+                          <div class="data__cell">
+                            <div class="data__main">
+                              <div class="data__preview color-blue"><i class="la la-behance "></i></div>
+                              <div class="data__wrap">
+                                <div class="data__content"><strong>Behance UI Presentation</strong></div>
+                                <div class="data__label">Design</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="data__cell">
+                            <div class="data__content"><strong>90</strong> / 90</div>
+                            <div class="data__label">Tasks</div>
+                          </div>
+                          <div class="data__cell">
+                            <!-- members-->
+                            <div class="members data__members">
+                              <div class="members__item"><img class="members__pic" src="img/user-1.jpg" alt="User" /></div>
+                              <div class="members__item"><img class="members__pic" src="img/user-2.jpg" alt="User" /></div>
+                              <div class="members__item"><img class="members__pic" src="img/user-3.jpg" alt="User" /></div>
+                              <div class="members__item">
+                                <div class="members__counter">+5</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="data__item">
+                        <div class="data__corner data__corner_left">
+                          <!-- progress-->
+                          <div class="progress">
+                            <div class="progress__value bg-green-raw" style="width: 70%"></div>
+                          </div>
+                        </div>
+                        <div class="data__corner">
+                          <!-- action--><button class="action action_stroke"><i class="la la-ellipsis-h "></i></button></div>
+                        <div class="data__row">
+                          <div class="data__cell">
+                            <div class="data__main">
+                              <div class="data__preview color-red"><i class="la la-dribbble "></i></div>
+                              <div class="data__wrap">
+                                <div class="data__content"><strong>Dribble Website</strong></div>
+                                <div class="data__label">Development</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="data__cell">
+                            <div class="data__content"><strong>90</strong> / 90</div>
+                            <div class="data__label">Tasks</div>
+                          </div>
+                          <div class="data__cell">
+                            <!-- members-->
+                            <div class="members data__members">
+                              <div class="members__item"><img class="members__pic" src="img/user-1.jpg" alt="User" /></div>
+                              <div class="members__item"><img class="members__pic" src="img/user-2.jpg" alt="User" /></div>
+                              <div class="members__item"><img class="members__pic" src="img/user-3.jpg" alt="User" /></div>
+                              <div class="members__item">
+                                <div class="members__counter">+5</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel__foot">
+              <div class="pager new_pager">
+                <a class="pager__arrow action action_icon_before" href="#"><i class="la la-angle-left "></i>Prev</a>
+                <div class="pager__list">
+                  <a class="pager__link new_action action" href="#">1</a>
+                  <a class="pager__link new_action action" href="#">2</a>
+                  <a class="pager__link new_action action active" href="#">3</a>
+                  <a class="pager__link new_action action" href="#">4</a>
+                  <a class="pager__link new_action action" href="#">5</a>
+                </div>
+                <a class="pager__arrow action action_icon_after" href="#">Next<i class="la la-angle-right "></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- modals-->
+    <!-- scripts-->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/datepicker.min.js"></script>
+    <script src="js/lib/datepicker.en.js"></script>
+    <script src="js/lib/select2.min.js"></script>
+    <script src="js/lib/wNumb.min.js"></script>
+    <script src="js/lib/nouislider.min.js"></script>
+    <script src="js/lib/apexcharts.min.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+/* @media (min-width: 350px) and (max-width: 576px) {
+  .wallet_main_block_second {
+    display: none;
+  }
+  .back_to_my_project_span {
+    display: none;
+  }
+  .back_to_my_projects {
+    margin-right: 10px;
+    margin-right: 88px;
+  }
+  .save_platform {
+    height: 44px;
+    padding: 10px 6px;
+  }
+  .dashboard_left_block_text_details {
+    padding-bottom: 10px;
+  }
+  .auth__form {
+    display: flex;
+    flex-direction: column;
+  }
+  .auth__inner {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .new__action {
+    margin-left: -114px;
+    padding: 10px 19px 10px 27px !important;
+  }
+  .top_search {
+    width: 42%;
+    margin-left: 14px;
+  }
+  .wallet_main_block_left {
+    flex-direction: column;
+  }
+  .wallet_main_block_second1 {
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+  }
+  .evan_yates {
+    display: none;
+  }
+  .my_platform_data__cell {
+    padding: 0 9px 0px 1px !important;
+  }
+  .new_data__cell {
+    padding: 0px 21px 0px 12px;
+  }
+  .wallet_main_block {
+    display: flex;
+    flex-direction: column;
+  }
+  .widthdraw_funds_button {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .wallet_main_block_second {
+    display: none;
+  }
+  .dashboard_left_block_text_details {
+    margin-bottom: 10px;
+  }
+  .form_fields_blocks {
+    display: flex;
+    flex-direction: column;
+  }
+  .back_to_my_project_span {
+    display: none;
+  }
+  .back_to_my_projects {
+    margin-right: 10px;
+    margin-right: 88px;
+  }
+  .save_platform {
+    height: 44px;
+    padding: 10px 6px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .new_data__cell {
+    padding: 0px 53px 0px 13px;
+    margin-top: 10px;
+  }
+} */

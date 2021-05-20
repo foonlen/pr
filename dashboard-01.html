@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard 01</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Page description"><!-- Twitter Card data-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="Page Title">
+    <meta name="twitter:description" content="Page description less than 200 characters">
+    <meta name="twitter:creator" content="@author_handle">
+    <meta name="twitter:image" content="http://www.example.com/image.jpg"><!-- Open Graph data-->
+    <meta property="og:title" content="Title Here">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://www.example.com/">
+    <meta property="og:image" content="http://example.com/image.jpg">
+    <meta property="og:description" content="Description Here">
+    <meta property="og:site_name" content="Site Name, i.e. Moz">
+    <meta property="fb:admins" content="Facebook numeric ID">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="all" href="css/app.css"><!-- favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+  </head>
+  <body>
+    <!-- page-->
+    <div class="page">
+      <!-- sidebar-->
+      <div class="sidebar js-sidebar">
+        <div class="sidebar__nav">
+          <!-- nav-->
+          <nav class="nav js-nav"><a class="nav__link nav__link_head" href="/">
+              <div class="my_nav__preview"><img class="nav__pic" src="img/dashboard2.png" alt="Logo"></div>
+            </a>
+            <div class="nav__list">
+              <!-- mobile primary menu-->
+              <div class="nav__primary js-nav-primary">
+                <div class="nav__group">
+                  <a class="nav__link active" href="#" title="Dashboard">
+                    <div class="nav__preview"><i class="la la-tachometer-alt "></i></div>
+                    <div class="nav__title">Dashboard</div>
+                  </a>
+                  <a class="nav__link" href="#" title="Projects">
+                    <div class="nav__preview"><i class="la la-toolbox "></i></div>
+                    <div class="nav__title">My orders</div>
+                  </a>
+                  <a class="nav__link" href="#" title="Tasks">
+                    <div class="nav__preview"><i class="la la-clipboard-check "></i></div>
+                    <div class="nav__title">Platform</div>
+                  </a>
+                  <a class="nav__link" href="#" title="Kanban">
+                    <div class="nav__preview"><i class="la la-images "></i></div>
+                    <div class="nav__title">Wallet</div>
+                  </a>
+                </div>
+              </div>
+          </nav>
+        </div>
+        
+      </div><!-- container-->
+      <div class="container js-container">
+        <div class="container__head">
+          <div class="container__title title title_md dasboard_title">Dashboard</div>
+          <div class="container__search search js-search">
+            <button class="search__action action js-search-open"><i class="la la-bell"></i></button>
+            <div class="search__dropdown js-search-dropdown">
+              <div class="search__field"><input class="search__input js-search-input" type="search" placeholder="Start typing…">
+                <div class="search__icon"><i class="la la-bell"></i></div>
+              </div>
+              <div class="search__results js-search-results"><a class="search__result" href="#">
+                  <div class="search__cell">
+                    <div class="search__preview color-red"><i class="lab la-dribbble "></i></div>
+                  </div>
+                  <div class="search__cell">
+                    <div class="search__title">Dribble Redesign</div>
+                    <div class="search__text">Webdesign</div>
+                  </div>
+                  <div class="search__cell mobile-hide">
+                    <!-- tag-->
+                    <div class="search__tag tag gray">24 Feb 2019</div>
+                  </div>
+                </a><a class="search__result" href="#">
+                  <div class="search__cell">
+                    <div class="search__preview color-green"><i class="lab la-evernote "></i></div>
+                  </div>
+                  <div class="search__cell">
+                    <div class="search__title">New HTML Theme</div>
+                    <div class="search__text">Theme</div>
+                  </div>
+                  <div class="search__cell mobile-hide">
+                    <!-- tag-->
+                    <div class="search__tag tag gray">20 May 2019</div>
+                  </div>
+                </a><a class="search__result" href="#">
+                  <div class="search__cell">
+                    <div class="search__preview"><img class="search__pic" src="img/user-1.jpg" alt="User"></div>
+                  </div>
+                  <div class="search__cell">
+                    <div class="search__title">Bradley Wilkins</div>
+                    <div class="search__text">b.wilkins@gmail.com</div>
+                  </div>
+                  <div class="search__cell mobile-hide">
+                    <!-- tag-->
+                    <div class="search__tag tag gray">Designer</div>
+                  </div>
+                </a></div>
+            </div>
+            <div class="search__backdrop backdrop js-search-backdrop"></div>
+          </div>
+          <!-- new-->
+          <div class="container__new new js-new">
+            <button class="new__action action js-new-open responsive_dropdown">
+              <img src='img/user-1.jpg' width='20' class='dropdown_user'/><p class='evan_yates'>Evan Yates</p><i class="la la-angle-down" style='margin-left:12px'></i>
+            </button>
+            <div class="new__dropdown js-new-dropdown">
+              <a class="new__item" href="#">
+                <div class="new__icon"><i class="la la-toolbox "></i></div>
+                <div class="new__title">Profile</div>
+              </a>
+              <a class="new__item" href="#">
+                <div class="new__icon"><i class="la la-clipboard-check "></i></div>
+                <div class="new__title">Wallet</div>
+              </a>
+              <a class="new__item" href="#">
+                <div class="new__icon"><i class="la la-user-lock "></i></div>
+                <div class="new__title">Updates</div>
+              </a>
+              <a class="new__item" href="#">
+                <div class="new__icon"><i class="la la-calendar-week "></i></div>
+                <div class="new__title">Logout</div>
+              </a>
+            </div>
+            <div class="new__backdrop backdrop js-new-backdrop"></div>
+          </div>
+        </div>
+        <div class="container__body">
+          <!-- layout-->
+          <div class="layout" style='margin-bottom:0px'>
+            <div class="layout__row">
+              <!-- panel-->
+              <div class="layout__panel layout__panel_x2 panel" style='padding:0px 24px; '>
+                <div class='dashboard_main_block'>
+                  <div class='dashboard_left_block'>
+                    <p class='dashboard_left_block_text'>Hello Evan!</p>
+                    <p class='dashboard_left_block_text_details'>Add project data, create thematic pages, edit data, share information with team members</p>
+                  </div>
+                  <div>
+                    <img src='img/dashboard1.png' class='dashboard_main_img' /> 
+                  </div>
+                </div>
+              </div>
+              <!-- panel-->
+              <div class="layout__panel panel" style='padding:0px 24px; '>
+                <p class='dashbboard_left_block_wallet' >Wallet</p>
+                <p class='dashbboard_left_block_wallet_amount'>$56400</p>
+                <p class='dashbboard_left_block_wallet_pending'>Pending $78</p>
+                <p class='dashbboard_left_block_wallet_details'>Click here to view</p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          
+
+
+          <!-- layout-->
+          <div class="layout dash_layout">
+            <div class="layout__row">
+              <!-- panel-->
+              <div class="my_layout__panel layout__panel_x2 my_panel">
+                <div class="panel__head">
+                  <div class="panel__group">
+                    <div class="panel__title title">Orders</div>
+                  </div>
+                  <div class="panel__title title" style='color:#63a1fd; font-weight: 100;font-size:14px'>View All <i class='la la-angle-right' style='margin-top:11px'></i></div>
+                </div>
+                <div class="my_panel__body panel__body_bg">
+
+
+
+
+
+
+
+                    <div class="data__body" style='padding:0px'>
+                      <div class="new_data__item">
+                        <div class="data__row dash_data_row" style='padding-left:10px;padding-right: 10px;'>
+                          <div class="grid__flex">
+                            <div class="grid__preview"><img class="grid__pic" src="img/product-1.jpg" alt="Product"></div>
+                            <div class="grid__wrap">
+                              <div class="grid__bold">PN0001265</div>
+                              <div class="grid__text">Delta Token Promotion</div>
+                            </div>
+                          </div>
+                          <div class="new_data__cell_dashboard mobile-text-right">
+                              <div class="data__content" style='margin-top: 8px;'>Media Type</div>
+                              <div class="data__label" style='font-weight:100'>Blog Article</div>
+                          </div>
+                          <div class="new_data__cell_dashboard mobile-text-right">
+                              <div class="data__content" style='margin-top: 8px;'>Platform</div>
+                              <div class="data__label" style='font-weight:100'>News Media</div>
+                          </div>
+                          <div class="new_data__cell_dashboard mobile-hide">
+                              <div class="data__content" style='margin-top: 8px;'>Priority</div>
+                              <div class="data__label" style='font-weight:100;color:#ffc12f'><i class='la la-arrow-up'></i>Medium</div>
+                          </div>
+                          <div class="new_data__cell_dashboard mobile-hide">
+                            <div class='view_bar_chart_orders dash_vieworder'>
+                              <i class='la la-bar-chart'></i>
+                              <p>View Orders</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="new_data__item">
+                        <div class="data__row dash_data_row" style='padding-left:10px;padding-right: 10px;'>
+                          <div class="grid__flex">
+                            <div class="grid__preview"><img class="grid__pic" src="img/product-1.jpg" alt="Product"></div>
+                            <div class="grid__wrap">
+                              <div class="grid__bold">PN0001265</div>
+                              <div class="grid__text">Delta Token Promotion</div>
+                            </div>
+                          </div>
+                          <div class="new_data__cell_dashboard mobile-text-right">
+                              <div class="data__content" style='margin-top: 8px;'>Media Type</div>
+                              <div class="data__label" style='font-weight:100'>Blog Article</div>
+                          </div>
+                          <div class="new_data__cell_dashboard mobile-text-right">
+                              <div class="data__content" style='margin-top: 8px;'>Platform</div>
+                              <div class="data__label" style='font-weight:100'>News Media</div>
+                          </div>
+                          <div class="new_data__cell_dashboard mobile-hide">
+                              <div class="data__content" style='margin-top: 8px;'>Priority</div>
+                              <div class="data__label" style='font-weight:100;'><i class='la la-arrow-up'></i>Normal</div>
+                          </div>
+                          <div class="new_data__cell_dashboard mobile-hide">
+                            <div class='view_bar_chart_orders dash_vieworder'>
+                              <div><i class='la la-bar-chart'></i></div>
+                              <div><p>View Orders</p></div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="new_data__item">
+                        <div class="data__row dash_data_row" style='padding-left:10px;padding-right: 10px;'>
+                          <div class="grid__flex">
+                            <div class="grid__preview"><img class="grid__pic" src="img/product-1.jpg" alt="Product"></div>
+                            <div class="grid__wrap">
+                              <div class="grid__bold">PN0001265</div>
+                              <div class="grid__text">Delta Token Promotion</div>
+                            </div>
+                          </div>
+                          <div class="new_data__cell_dashboard mobile-text-right">
+                              <div class="data__content" style='margin-top: 8px;'>Media Type</div>
+                              <div class="data__label" style='font-weight:100'>Blog Article</div>
+                          </div>
+                          <div class="new_data__cell_dashboard mobile-text-right">
+                              <div class="data__content" style='margin-top: 8px;'>Platform</div>
+                              <div class="data__label" style='font-weight:100'>News Media</div>
+                          </div>
+                          <div class="new_data__cell_dashboard mobile-hide">
+                              <div class="data__content" style='margin-top: 8px;'>Priority</div>
+                              <div class="data__label" style='font-weight:100;color:#ffc12f'><i class='la la-arrow-up'></i>Medium</div>
+                          </div>
+                          <div class="new_data__cell_dashboard mobile-hide">
+                            <div class='view_bar_chart_orders dash_vieworder'>
+                              <i class='la la-bar-chart'></i>
+                              <p>View Orders</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="new_data__item">
+                        <div class="data__row dash_data_row" style='padding-left:10px;padding-right: 10px;'>
+                          <div class="grid__flex">
+                            <div class="grid__preview"><img class="grid__pic" src="img/product-1.jpg" alt="Product"></div>
+                            <div class="grid__wrap">
+                              <div class="grid__bold">PN0001265</div>
+                              <div class="grid__text">Delta Token Promotion</div>
+                            </div>
+                          </div>
+                          <div class="new_data__cell_dashboard mobile-text-right">
+                              <div class="data__content" style='margin-top: 8px;'>Media Type</div>
+                              <div class="data__label" style='font-weight:100'>Blog Article</div>
+                          </div>
+                          <div class="new_data__cell_dashboard mobile-text-right">
+                              <div class="data__content" style='margin-top: 8px;'>Platform</div>
+                              <div class="data__label" style='font-weight:100'>News Media</div>
+                          </div>
+                          <div class="new_data__cell_dashboard mobile-hide">
+                              <div class="data__content" style='margin-top: 8px;'>Priority</div>
+                              <div class="data__label" style='font-weight:100;'><i class='la la-arrow-up'></i>Medium</div>
+                          </div>
+                          <div class="new_data__cell_dashboard mobile-hide">
+                            <div class='view_bar_chart_orders dash_vieworder'>
+                              <i class='la la-bar-chart'></i>
+                              <p>View Orders</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                  <!-- <div class='grid__body'>
+                    <div class="grid__row">
+                      <div class="my_grid__cell">
+                        <div class="grid__flex">
+                          <div class="grid__preview"><img class="grid__pic" src="img/product-1.jpg" alt="Product"></div>
+                          <div class="grid__wrap">
+                            <div class="grid__bold">PN0001265</div>
+                            <div class="grid__text">Delta Token Promotion</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="my_grid__cell mobile-hide">
+                        <div class="grid__bold">Media Type</div>
+                        <div class="grid__text">Blog, Article</div>
+                      </div>
+                      <div class="my_grid__cell mobile-hide">
+                        <div class="grid__bold">Platform</div>
+                        <div class="grid__text">News Media</div>
+                      </div>
+                      <div class="my_grid__cell mobile-hide">
+                        <div class="grid__bold">Priority</div>
+                        <div class="grid__text" style='color:#ffc12f'><i class='la la-arrow-up'></i>Medium</div>
+                      </div>
+                      <div class="my_grid__cell mobile-hide" >
+                        <div class='view_bar_chart_orders'>
+                          <i class='la la-bar-chart'></i>
+                          <p>View Orders</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid__row">
+                      <div class="my_grid__cell">
+                        <div class="grid__flex">
+                          <div class="grid__preview">
+                            <img class="grid__pic" src="img/product-1.jpg" alt="Product"></div>
+                          <div class="grid__wrap">
+                            <div class="grid__bold">PN0001265</div>
+                            <div class="grid__text">Delta Token Promotion</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="my_grid__cell mobile-hide">
+                        <div class="grid__bold">Media Type</div>
+                        <div class="grid__text">Blog, Article</div>
+                      </div>
+                      <div class="my_grid__cell mobile-hide">
+                        <div class="grid__bold">Platform</div>
+                        <div class="grid__text">News Media</div>
+                      </div>
+                      <div class="my_grid__cell mobile-hide">
+                        <div class="grid__bold">Priority</div>
+                        <div class="grid__text"><i class='la la-arrow-up'></i>Normal</div>
+                      </div>
+                      <div class="my_grid__cell mobile-hide" >
+                        <div class='view_bar_chart_orders'>
+                          <i class='la la-bar-chart'></i>
+                          <p>View Orders</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid__row">
+                      <div class="my_grid__cell">
+                        <div class="grid__flex">
+                          <div class="grid__preview">
+                            <img class="grid__pic" src="img/product-1.jpg" alt="Product"></div>
+                          <div class="grid__wrap">
+                            <div class="grid__bold">PN0001265</div>
+                            <div class="grid__text">Delta Token Promotion</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="my_grid__cell mobile-hide">
+                        <div class="grid__bold">Media Type</div>
+                        <div class="grid__text">Blog, Article</div>
+                      </div>
+                      <div class="my_grid__cell mobile-hide">
+                        <div class="grid__bold">Platform</div>
+                        <div class="grid__text">News Media</div>
+                      </div>
+                      <div class="my_grid__cell mobile-hide">
+                        <div class="grid__bold">Priority</div>
+                        <div class="grid__text" style='color:#ffc12f'><i class='la la-arrow-up'></i>Medium</div>
+                      </div>
+                      <div class="my_grid__cell mobile-hide" >
+                        <div class='view_bar_chart_orders'>
+                          <i class='la la-bar-chart'></i>
+                          <p>View Orders</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid__row">
+                      <div class="my_grid__cell">
+                        <div class="grid__flex">
+                          <div class="grid__preview">
+                            <img class="grid__pic" src="img/product-1.jpg" alt="Product"></div>
+                          <div class="grid__wrap">
+                            <div class="grid__bold">PN0001265</div>
+                            <div class="grid__text">Delta Token Promotion</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="my_grid__cell mobile-hide">
+                        <div class="grid__bold">Media Type</div>
+                        <div class="grid__text">Blog, Article</div>
+                      </div>
+                      <div class="my_grid__cell mobile-hide">
+                        <div class="grid__bold">Platform</div>
+                        <div class="grid__text">News Media</div>
+                      </div>
+                      <div class="my_grid__cell mobile-hide">
+                        <div class="grid__bold">Priority</div>
+                        <div class="grid__text"><i class='la la-arrow-up'></i>Normal</div>
+                      </div>
+                      <div class="my_grid__cell mobile-hide" >
+                        <div class='view_bar_chart_orders'>
+                          <i class='la la-bar-chart'></i>
+                          <p>View Orders</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+              <!-- panel-->
+              <div class="my_layout__panel my_panel">
+                <div class="panel__head panel__head_line">
+                  <div class="panel__group">
+                    <div class="panel__title title">Overview</div>
+                  </div>
+                  
+                </div>
+                <div class="panel__body panel__body_bg">
+                  <div class='overview_panel_body dash_single_block'>
+                    <div class="overview__item single_block" >
+                      <div class="overview__row">
+                        <div class="overview__col">
+                          <div class="overview__preview blue"><i class="la la-chart-area "></i></div>
+                          <div class="overview__label" style='margin-top:15px; margin-bottom:6px'>New sales</div>
+                          <div class="overview__value">1.345</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="overview__item single_block">
+                      <div class="overview__row">
+                        <div class="overview__col">
+                          <div class="overview__preview blue"><i class="la la-chart-area "></i></div>
+                          <div class="overview__label" style='margin-top:15px; margin-bottom:6px'>New leads</div>
+                          <div class="overview__value">2.890</div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class='overview_panel_body dash_single_block'>
+                    <div class="overview__item single_block1" >
+                      <div class="overview__row">
+                        <div class="overview__col">
+                          <div class="overview__preview blue"><i class="la la-chart-area "></i></div>
+                          <div class="overview__label" style='margin-top:15px; margin-bottom:6px'>Conversion rate</div>
+                          <div class="overview__value">$1.870</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="overview__item single_block">
+                      <div class="overview__row">
+                        <div class="overview__col">
+                          <div class="overview__preview blue"><i class="la la-chart-area "></i></div>
+                          <div class="overview__label" style='margin-top:15px; margin-bottom:6px'>New sales</div>
+                          <div class="overview__value">5.10%</div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- scripts-->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/datepicker.min.js"></script>
+    <script src="js/lib/datepicker.en.js"></script>
+    <script src="js/lib/select2.min.js"></script>
+    <script src="js/lib/wNumb.min.js"></script>
+    <script src="js/lib/nouislider.min.js"></script>
+    <script src="js/lib/apexcharts.min.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

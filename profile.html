@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Contacts 01</title>
+    <title>My Profile</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#fff">
@@ -44,346 +44,289 @@
             <div class="nav__list">
               <!-- mobile primary menu-->
               <div class="nav__primary js-nav-primary">
-                <div class="nav__group">
-                  <a class="nav__link active" href="dashboard.html" title="Dashboard">
+                <div class="nav__group"><a class="nav__link active" href="dashboard.html" title="Dashboard">
                     <div class="nav__preview"><i class="la la-tachometer-alt "></i></div>
                     <div class="nav__title">Dashboard</div>
                   </a><a class="nav__link" href="orders.html" title="Projects">
                     <div class="nav__preview"><i class="la la-toolbox "></i></div>
                     <div class="nav__title">My Orders</div>
-                  </a><a class="nav__link" href="platform.html" title="Tasks">
+                  </a><a class="nav__link" href="planning.html" title="Tasks">
                     <div class="nav__preview"><i class="la la-clipboard-check "></i></div>
                     <div class="nav__title">Platform</div>
-                  </a><a class="nav__link" href="wallet" title="Kanban">
+                  </a><a class="nav__link" href="wallet1.html" title="Kanban">
                     <div class="nav__preview"><i class="la la-images "></i></div>
                     <div class="nav__title">Wallet</div>
-                  </a>
-                  <a class="nav__link" href="reports.html" title="Kanban">
-                    <div class="nav__preview"><i class="la la-images "></i></div>
+                  </a><a class="nav__link" href="single-order1.html" title="Calendar">
+                    <div class="nav__preview"><i class="la la-calendar-week "></i></div>
                     <div class="nav__title">Reports</div>
-                  </a>
-                </div>
+                  </a><a class="nav__link nav__link_menu js-nav-link-menu" href="#">
+                    <div class="nav__preview"><i class="la la-bars "></i></div>
+                  </a></div>
               </div>
-              </div>
+              <!-- mobile secondary menu-->
+              
+            </div>
           </nav>
         </div>
-  
+        
       </div><!-- container-->
-      <div class="contact-profile container js-container">
+      <div class="container js-container">
         <div class="container__head">
-         
-          <div class="container__title title title_md my-profile-title">
-
-            <div class="top_search">
-              <i class="la la-search"></i><input type="text" placeholder="Search" class="top_search_input evan_yates">
+       <!--    <button class="container__action container__action_menu action js-container-toggle"><i class="la la-bars "></i></button> -->
+          <div class="container__title title title_sm"><a href="dashboard.html"><i class="la la-arrow-left"></i> Back</a></div><!-- search-->
+          <div class="container__search search js-search"><button class="search__action action js-search-open custom_action"><i class="la la-search "></i></button>
+            <div class="search__dropdown js-search-dropdown">
+              <div class="search__field"><input class="search__input js-search-input" type="search" placeholder="Start typing…">
+                <div class="search__icon"><i class="la la-search "></i></div>
+              </div>
+              <div class="search__results js-search-results"><a class="search__result" href="#">
+                  <div class="search__cell">
+                    <div class="search__preview color-red"><i class="lab la-dribbble "></i></div>
+                  </div>
+                  <div class="search__cell">
+                    <div class="search__title">Dribble Redesign</div>
+                    <div class="search__text">Webdesign</div>
+                  </div>
+                  <div class="search__cell mobile-hide">
+                    <!-- tag-->
+                    <div class="search__tag tag gray">24 Feb 2019</div>
+                  </div>
+                </a><a class="search__result" href="#">
+                  <div class="search__cell">
+                    <div class="search__preview color-green"><i class="lab la-evernote "></i></div>
+                  </div>
+                  <div class="search__cell">
+                    <div class="search__title">New HTML Theme</div>
+                    <div class="search__text">Theme</div>
+                  </div>
+                  <div class="search__cell mobile-hide">
+                    <!-- tag-->
+                    <div class="search__tag tag gray">20 May 2019</div>
+                  </div>
+                </a><a class="search__result" href="#">
+                  <div class="search__cell">
+                    <div class="search__preview"><img class="search__pic" src="img/user-1.jpg" alt="User"></div>
+                  </div>
+                  <div class="search__cell">
+                    <div class="search__title">Bradley Wilkins</div>
+                    <div class="search__text">b.wilkins@gmail.com</div>
+                  </div>
+                  <div class="search__cell mobile-hide">
+                    <!-- tag-->
+                    <div class="search__tag tag gray">Designer</div>
+                  </div>
+                </a></div>
             </div>
-
-            
-
-          </div>
-          
-
-          <div class="container__search">
-            
-           <button class="top-cards"><i class="la la-bell"></i></button>
-           <div class="container__new new js-new" style='border:0px'>
-            <button class="new__action action js-new-open user_my_orders" style='padding:10px 20px;border:0px'>
-              <img src='img/user-1.jpg' width='20' style='border-radius:50%; margin-left: -10px;margin-right:7px'/><p class='evan_yates'>Evan Yates</p><i class="la la-angle-down" style='margin-left:12px'></i>
-            </button>
-            <div class="new__dropdown js-new-dropdown">
-              <a class="new__item" href="profile.html">
+            <div class="search__backdrop backdrop js-search-backdrop"></div>
+          </div><!-- new-->
+          <div class="container__new new js-new">
+           <button class="new__action action js-new-open custom_search__action"><img src='img/user-1.jpg' width='20' style='border-radius:50%; margin-right:10px' /><span class="userprofilename"><span class="userprofilename">Evan Yates</span></span><i class="la la-angle-down" style='margin-left:10px'></i></button>
+            <div class="new__dropdown js-new-dropdown"><a class="new__item" href="profile.html">
                 <div class="new__icon"><i class="la la-toolbox "></i></div>
                 <div class="new__title">Profile</div>
-              </a>
-              <a class="new__item" href="wallet.html">
+              </a><a class="new__item" href="wallet.html">
                 <div class="new__icon"><i class="la la-clipboard-check "></i></div>
                 <div class="new__title">Wallet</div>
-              </a>
-              <a class="new__item" href="#">
+              </a><a class="new__item" href="#">
                 <div class="new__icon"><i class="la la-user-lock "></i></div>
                 <div class="new__title">Updates</div>
-              </a>
-              <a class="new__item" href="index.html">
+              </a><a class="new__item" href="index.html">
                 <div class="new__icon"><i class="la la-calendar-week "></i></div>
                 <div class="new__title">Logout</div>
-              </a>
-            </div>
-            <div class="new__backdrop backdrop js-new-backdrop"></div>
-          </div>
-          </div>
-
-
-
-        <!--   <div class="container__new new js-new"><button class="new__action action js-new-open"><i class="la la-plus-circle "></i></button>
-            <div class="new__dropdown js-new-dropdown"><a class="new__item" href="#">
-                <div class="new__icon"><i class="la la-toolbox "></i></div>
-                <div class="new__title">New Project</div>
-              </a><a class="new__item" href="#">
-                <div class="new__icon"><i class="la la-clipboard-check "></i></div>
-                <div class="new__title">New Task</div>
-              </a><a class="new__item" href="#">
-                <div class="new__icon"><i class="la la-user-lock "></i></div>
-                <div class="new__title">New Contact</div>
-              </a><a class="new__item" href="#">
-                <div class="new__icon"><i class="la la-calendar-week "></i></div>
-                <div class="new__title">New Event</div>
-              </a><a class="new__item" href="#">
-                <div class="new__icon"><i class="la la-cube "></i></div>
-                <div class="new__title">New Product</div>
-              </a><a class="new__item" href="#">
-                <div class="new__icon"><i class="la la-calculator "></i></div>
-                <div class="new__title">New Invoice</div>
               </a></div>
             <div class="new__backdrop backdrop js-new-backdrop"></div>
-          </div> -->
+          </div>
         </div>
-            <div class="profile__head_title"><h1>My Profile</div>
-        <div class="profilecontainer__head">
-        <div class="profile_body profilebody">
-           <div class="profile_view">
-              <div class="profile_images">
-                <img src="img/user-1.jpg">
-                 <h3>Evan Yates</h3>
-              <p class="data__content">UI/Ux developers</p>
-
+        <div class="container__body">
+       
+          <div class="layout my_profile">
+            <div class="container__title title title_lg">My Profile</div>
+            <div class="layout__row js-panel">
+              <!-- panel-->
+                 <div class="layout__panel panel profilehead">
+                <div class="panel__head panel__head_line">
+                  <div class="panel__group">
+                    <div class="content__person">
+                <div class="content__preview"><img class="content__pic" src="img/user-1.jpg" alt="User"></div>
+                <div class="content__title title title_md">Johann Stevens</div>
+                <div class="content__text">UI/UX Designer</div>
+             
               </div>
-              <div class="pro_details">
+                  
+                  </div><!-- action group-->
+                  <div class="panel__group action-group"><button class="action"><i class="la la-edit"></i></button></div>
+                </div>
 
-               
-                <h4 class="profile_edits"><i class="la la-edit" ></i></h4>
-              </div>
-            </div>
-          <div class="profile_details">
-           
-            <div class="profileheading">
-                    <h3>Main Info</h3>
+                 <div class="panel__head panel__head_line profile_maininfo">
+                  <div class="panel__group">
+                      <div class="panel__title title">Main Info</div>
 
-            </div>
-      
-              <form class="auth__form"  action>
-
-                <div class="field auth__field">
-              <div class="field__label">Full name</div>
-              <div class="field__wrap"><input class="field__input" type="text" placeholder="Yourname" style='font-weight: normal; color:#b5bac1;'>
-               
-              </div>
-            </div>
-
+                      <form class="auth__form" action="">
             <div class="field auth__field">
-              <div class="field__label">Email Address</div>
-              <div class="field__wrap"><input class="field__input" type="email" placeholder="youremail@gmail.com" style='font-weight: normal; color:#b5bac1;'>
-               
+              <div class="field__label">Full name</div>
+              <div class="field__wrap"><input class="field__input" type="text" placeholder="Jhon">
+                <div class="field__icon"><i class="la la-user-alt "></i></div>
+              </div>
+            </div>
+            <div class="field auth__field">
+              <div class="field__label">Email</div>
+              <div class="field__wrap"><input class="field__input" type="email" placeholder="Jhon@gmail.com">
+                <div class="field__icon"><i class="la la-envelope "></i></div>
               </div>
             </div>
             <div class="field auth__field">
               <div class="field__label">Location</div>
-              <div class="field__wrap"><input class="field__input" type="text" placeholder="Location" style='font-weight: normal; color:#b5bac1;'>
-                
+                <div class="field__wrap">
+            <select class="field__select">
+                      <option disabled="" selected="">Select Location</option>
+                      <option>Banglore</option>
+                      <option>Banglore</option>
+                      <option>Banglore</option>
+                    </select>
+                  <div class="field__icon"><i class="la la-angle-down "></i></div>
+                </div>
+            </div>
+             <div class="field auth__field">
+              <div class="field__label">Mobile Number</div>
+              <div class="field__wrap"><input class="field__input" type="text" placeholder="9876543210">
+                <div class="field__icon"><i class="la la-phone-volume "></i></div>
               </div>
             </div>
-        
-              <div class="field auth__field">
-              <div class="field__label">Mobile number</div>
-              <div class="field__wrap"><input class="field__input" type="text" placeholder="Mobile number" style='font-weight: normal; color:#b5bac1;'>
+         
+            <div class="auth__btns">
+
+              <button class="btn auth__btn">Update Profile</button></div><!-- enter-->
+            
+          </form>
+                  
+                  </div><!-- action group-->
+                 
+                </div>
              
               </div>
-            </div>
+              <div class="layout__panel layout__panel_x2 panel profiledetails_tabs">
+                <div class="panel__head">
+                  <div class="panel__group btn-group btn-group_tabs tabs_btn">
+                    <button class="btn btn_light btn_icon js-panel-btn active"> <i class="la la-key "></i> Password</button>
 
-             <div class="auth__btns" style='margin-right:0px; margin:39px 0px 0'><a href='#' class="btn auth__btn" >Update Profile</a></div>
+                    <button class="btn btn_light btn_icon js-panel-btn"><i class="la la-bank "></i> Bank Details</button>
 
-          </form>
+                    <button class="btn btn_light btn_icon js-panel-btn"><i class="la la-border-all "></i>Smart Payments</button>
 
-          </div>
-
-        </div>
-
-        <div class="container__body">
-          <!-- panel-->
-          <div class="nav-tab-color js-panel">
-            <div class="panel__head panel__head_line">
-              <!-- btn group-->
-              <div class="panel__group btn-group btn-group_tabs my_profile_tabs">
-                <button class="btn btn_light btn_icon js-panel-btn active"><i class="la la-key "></i>Password</button>
-                <button class="btn btn_light btn_icon js-panel-btn"><i class="la la-bank "></i>Bank Details</button>
-                <button class="btn btn_light btn_icon js-panel-btn"><i class="la la-border-all "></i>Smart Payments</button>
-              </div>
-              <!-- <div class="panel__group">
-                <div class="sort js-sort">
-                  <div class="sort__head js-sort-head">
-                    <div class="sort__icon"><i class="la la-filter "></i></div>
-                    <div class="sort__label">sort:</div>
-                    <div class="sort__selected js-sort-selected">A-Z</div>
-                    <div class="sort__arrow"><i class="la la-angle-down "></i></div>
-                  </div>
-                  <div class="sort__dropdown js-sort-dropdown">
-                    <div class="sort__title">Sort projects by</div>
-                    <div class="sort__items">
-                      <div class="sort__item"><label class="switch sort__switch js-sort-switch"><input class="switch__input" type="radio" name="sort" checked="checked" /><span class="switch__content">A-Z</span></label></div>
-                      <div class="sort__item"><label class="switch sort__switch js-sort-switch"><input class="switch__input" type="radio" name="sort" /><span class="switch__content">Budget</span></label></div>
-                      <div class="sort__item"><label class="switch sort__switch js-sort-switch"><input class="switch__input" type="radio" name="sort" /><span class="switch__content">Assigned Tasks</span></label></div>
-                      <div class="sort__item"><label class="switch sort__switch js-sort-switch"><input class="switch__input" type="radio" name="sort" /><span class="switch__content">Progress</span></label></div>
-                      <div class="sort__item"><label class="switch sort__switch js-sort-switch"><input class="switch__input" type="radio" name="sort" /><span class="switch__content">Date Created</span></label></div>
                     </div>
-                    <div class="sort__foot"><button class="sort__btn btn btn_light js-sort-apply">Apply</button></div>
-                  </div>
-                  <div class="sort__backdrop backdrop js-sort-backdrop"></div>
                 </div>
-              </div> -->
-            </div>
-            <div class="panel__body">
+              
+              <div class="panel__container">
               <div class="panel__tab js-panel-tab" style="display: block">
-                <!-- data-->
-                 <div class=" data_grid">
-                  <div class="data__container">
-               <!--  <div class="data data_list">
-                  <div class="data__container"> -->
-                    <div class="data__head datahead" >
-                      <!-- <div class="data__row">
-                        <div class="data__cell data__cell_md">
-                          <div class="data__filter">Name<i class="la la-sort-alpha-down "></i></div>
-                        </div>
-                        <div class="data__cell">
-                          <div class="data__filter">Email<i class="la la-sort-alpha-down "></i></div>
-                        </div>
-                        <div class="data__cell">
-                          <div class="data__filter">Phone<i class="la la-sort-alpha-down "></i></div>
-                        </div>
-                        <div class="data__cell data__cell_sm">
-                          <div class="data__filter">Rate<i class="la la-sort-alpha-down "></i></div>
-                        </div>
-                        <div class="data__cell">
-                          <div class="data__filter">Tag<i class="la la-sort-alpha-down "></i></div>
-                        </div>
-                        <div class="data__cell data__cell_action"></div>
-                      </div> -->
-                            <form class="auth__form"  action>
-
-                <div class="field auth__field">
-              <div class="field__label">Old Passwrd</div>
-              <div class="field__wrap"><input class="field__input" type="password" placeholder="***********" style='font-weight: normal; color:#b5bac1;'>
-               
+                <div class="panel__body">
+                  
+         <form class="auth__form profile_auth" action="">
+            <div class="field auth__field">
+              <div class="field__label">Old Password</div>
+              <div class="field__wrap"><input class="field__input" type="Password" placeholder="*********">
+                <div class="field__icon"><i class="la la-key "></i> </div>
               </div>
             </div>
-
             <div class="field auth__field">
               <div class="field__label">New Password</div>
-              <div class="field__wrap"><input class="field__input" type="password" placeholder="***********" style='font-weight: normal; color:#b5bac1;'>
-               
+              <div class="field__wrap"><input class="field__input" type="Password" placeholder="***********">
+                <div class="field__icon"><i class="la la-key "></i> </div>
+              </div>
+            </div>
+            
+             <div class="field auth__field">
+              <div class="field__label">Confirm Password</div>
+              <div class="field__wrap"><input class="field__input" type="Password" placeholder="**********">
+                <div class="field__icon"><i class="la la-key "></i> </div>
+              </div>
+            </div>
+         
+            <div class="auth__btns">
+
+              <button class="btn auth__btn">Change Password</button></div><!-- enter-->
+            
+          </form>
+
+
+                </div>
+             <!--    <div class="panel__foot"><button class="btn btn_only_icon m-auto"><i class="la la-redo-alt "></i></button></div> -->
+              </div>
+              <div class="panel__tab js-panel-tab" style="display: none">
+                <div class="panel__body">
+                  <!-- desk-->
+              <form class="auth__form profile_auth" action="">
+            <div class="field auth__field">
+              <div class="field__label">Account Number</div>
+              <div class="field__wrap"><input class="field__input" type="text" placeholder="876543280">
+                <div class="field__icon"><i class="la la-bank "></i> </div>
               </div>
             </div>
             <div class="field auth__field">
-              <div class="field__label">Confirm Password</div>
-              <div class="field__wrap"><input class="field__input" type="password" placeholder="***********" style='font-weight: normal; color:#b5bac1;'>
-                
+              <div class="field__label">Bank Name</div>
+              <div class="field__wrap"><input class="field__input" type="email" placeholder="State bank of India">
+                <div class="field__icon"><i class="la la-bank "></i> </div>
               </div>
             </div>
-        
+          
+             <div class="field auth__field">
+              <div class="field__label">Bank Holder Name</div>
+              <div class="field__wrap"><input class="field__input" type="text" placeholder="Jhon">
+                <div class="field__icon"><i class="la la-bank "></i> </div>
+              </div>
+            </div>
+         
+            <div class="auth__btns">
+
+              <button class="btn auth__btn">Update Bank Details</button></div><!-- enter-->
             
-
-             <div class="changepsw__btns" style='margin-right:0px; margin:39px 0px 0'><a href='#' class="btn auth__btn" >Change Password</a></div>
-
           </form>
-                    </div>
-                   <!--  <div class="data__body">
-                     
-                     
-                   
-                      
-                      
-                      
-                         
-                    </div> -->
-                  </div>
                 </div>
               </div>
               <div class="panel__tab js-panel-tab" style="display: none">
-                <!-- data-->
-                <div class=" data_grid">
-                  <div class="data__container">
-                    <div class="data__head">
-                      
-
-                         <form class="auth__form"  action>
-
-                <div class="field auth__field">
-              <div class="field__label">Account Number</div>
-              <div class="field__wrap"><input class="field__input" type="text" placeholder="987549092262" style='font-weight: normal; color:#b5bac1;'>
-               
-              </div>
-            </div>
-
-            <div class="field auth__field">
-              <div class="field__label">Bank Name</div>
-              <div class="field__wrap"><input class="field__input" type="text" placeholder="Bank Name" style='font-weight: normal; color:#b5bac1;'>
-               
+                <div class="panel__body">
+            
+            <form class="auth__form profile_auth" action="">
+           <div class="field auth__field">
+              <div class="field__label">Bitcoin</div>
+              <div class="field__wrap"><input class="field__input" type="text" placeholder="Bitcoin">
+                <div class="field__icon"><i class="la la-border-all "></i></div>
               </div>
             </div>
             <div class="field auth__field">
-              <div class="field__label">Bank Holder name</div>
-              <div class="field__wrap"><input class="field__input" type="text" placeholder="Bank holer name" style='font-weight: normal; color:#b5bac1;'>
-                
+              <div class="field__label">BTC Address</div>
+              <div class="field__wrap"><input class="field__input" type="text" placeholder=" 3P4p6UmTAgCz8MFLRdeuD">
+                <div class="field__icon"><i class="la la-border-all "></i></div>
               </div>
             </div>
-        
+          
+             <div class="field auth__field">
+              <div class="field__label">Amount</div>
+              <div class="field__wrap"><input class="field__input" type="text" placeholder="$1.000">
+                <div class="field__icon"><i class="la la-border-all "></i></div>
+              </div>
+            </div>
+         
+            <div class="auth__btns">
+
+              <button class="btn auth__btn">Submit</button></div><!-- enter-->
+            
+          </form>
+
+              </div>
+         
+              </div>
+              
+              
+            </div>
+
+              </div><!-- panel-->
+           
+            </div>
             
 
-             <div class="changepsw__btns" style='margin-right:0px; margin:39px 0px 0'><a href='#' class="btn auth__btn" >Update Bank Details</a></div>
-
-          </form>
-                        
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-
-                   <div class="panel__tab js-panel-tab" style="display: none">
-                <!-- data-->
-                <div class=" data_grid">
-                  <div class="data__container">
-                    <div class="data__head">
-                      
-
-                         <form class="auth__form"  action>
-
-                <div class="field auth__field">
-              <div class="field__label">Account Numer</div>
-              <div class="field__wrap"><input class="field__input" type="text" placeholder="987549092262" style='font-weight: normal; color:#b5bac1;'>
-               
-              </div>
-            </div>
-
-            <div class="field auth__field">
-              <div class="field__label">Bank Name</div>
-              <div class="field__wrap"><input class="field__input" type="text" placeholder="Bank Name" style='font-weight: normal; color:#b5bac1;'>
-               
-              </div>
-            </div>
-            <div class="field auth__field">
-              <div class="field__label">Bank Holder name</div>
-              <div class="field__wrap"><input class="field__input" type="text" placeholder="Bank holer name" style='font-weight: normal; color:#b5bac1;'>
-                
-              </div>
-            </div>
-
-
-        
-            
-
-             <div class="changepsw__btns" style='margin-right:0px; margin:39px 0px 0'><a href='#' class="btn auth__btn" >Update Bank Details</a></div>
-
-          </form>
-                        
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-      
           </div>
         </div>
       </div>
-    </div>
     </div><!-- modals-->
     <!-- scripts-->
     <script src="js/lib/jquery.min.js"></script>

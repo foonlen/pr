@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Platform 1</title>
+    <title>Wallet</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#fff">
@@ -72,14 +72,53 @@
       </div><!-- container-->
       <div class="container js-container">
         <div class="container__head">
-           <div class="container__title title title_sm"><a href="dashboard.html"><i class="la la-arrow-left"></i> Back</a></div>
-          <div class="container__search search js-search">
-              <button class="search__action action js-search-open custom_action" style='padding:0'><i class="la la-bell "></i></button>
-
-            
+          <div class="container__title title title_sm"><a href="dashboard.html"><i class="la la-arrow-left"></i> Back</a></div>
+          <div class="container__search search js-search"><button class="search__action action js-search-open custom_search__action"><i class="la la-search "></i></button>
+            <div class="search__dropdown js-search-dropdown">
+              <div class="search__field"><input class="search__input js-search-input" type="search" placeholder="Start typing…">
+                <div class="search__icon"><i class="la la-search "></i></div>
+              </div>
+              <div class="search__results js-search-results"><a class="search__result" href="#">
+                  <div class="search__cell">
+                    <div class="search__preview color-red"><i class="lab la-dribbble "></i></div>
+                  </div>
+                  <div class="search__cell">
+                    <div class="search__title">Dribble Redesign</div>
+                    <div class="search__text">Webdesign</div>
+                  </div>
+                  <div class="search__cell mobile-hide">
+                    <!-- tag-->
+                    <div class="search__tag tag gray">24 Feb 2019</div>
+                  </div>
+                </a><a class="search__result" href="#">
+                  <div class="search__cell">
+                    <div class="search__preview color-green"><i class="lab la-evernote "></i></div>
+                  </div>
+                  <div class="search__cell">
+                    <div class="search__title">New HTML Theme</div>
+                    <div class="search__text">Theme</div>
+                  </div>
+                  <div class="search__cell mobile-hide">
+                    <!-- tag-->
+                    <div class="search__tag tag gray">20 May 2019</div>
+                  </div>
+                </a><a class="search__result" href="#">
+                  <div class="search__cell">
+                    <div class="search__preview"><img class="search__pic" src="img/user-1.jpg" alt="User"></div>
+                  </div>
+                  <div class="search__cell">
+                    <div class="search__title">Bradley Wilkins</div>
+                    <div class="search__text">b.wilkins@gmail.com</div>
+                  </div>
+                  <div class="search__cell mobile-hide">
+                    <!-- tag-->
+                    <div class="search__tag tag gray">Designer</div>
+                  </div>
+                </a></div>
+            </div>
+            <div class="search__backdrop backdrop js-search-backdrop"></div>
           </div><!-- new-->
-          <div class="container__new new js-new">
-            <button class="new__action action js-new-open custom_search__action"><img src='img/user-1.jpg' width='20' style='border-radius:50%; margin-right:10px' /><span class="userprofilename">Evan Yates</span><i class="la la-angle-down" style='margin-left:10px'></i></button>
+          <div class="container__new new js-new"><button class="new__action action js-new-open custom_search__action"><img src='img/user-1.jpg' width='20' style='border-radius:50%; margin-right:10px' />Evan Yates<i class="la la-angle-down" style='margin-left:10px'></i></button>
             <div class="new__dropdown js-new-dropdown"><a class="new__item" href="profile.html">
                 <div class="new__icon"><i class="la la-toolbox "></i></div>
                 <div class="new__title">Profile</div>
@@ -97,194 +136,235 @@
           </div>
         </div>
         
+        <div class="container__title title title_lg wallet_title" style='margin-left: 29px; '>Wallet</div>
+        <p class=' wallet_sub_text'>Please Check</p>
         <div class="container__body">
+
+
+
+            <div class="layout">
+                <div class="layout__row">
+                  <div class="layout__panel my_layout__panel_x2 panel wallet_panel">
+                    <div class="panel__body panel__body_bg" style='padding:0px 10px'>
+                      <div class='wallet_block'>
+                        <div class='wallet_left_block'>
+                          <div class='wallet_first_block'>
+                            <p class='wallet_first_block_text'>Wallet</p>
+                            <p class='container__title title title_lg'>$ 56400</p>
+                            <p class='wallet_first_block_pending'>Pending: $ 78</p>
+                            <p class='wallet_first_block_details'>Click Here to View</p>
+                          </div>
+                          <div class='wallet_second_block'>
+                            <img src='img/stats-chart-1.png' width='100' />
+                            <p class='wallet_first_block_pending'>On Process: $ 120</p>
+                            <p class='wallet_first_block_details'>Click Here to View</p>
+                          </div>
+                          <div class='wallet_third_block'>
+                            <Button class='withdraw_funds_button'><a href='withdraw.html' style='color:white'><i class='la la-plus' style='margin-right:10px'></i>Withdraw Funds</a></Button>
+                          </div>
+                        </div>
+                        <div class='wallet_right_block'>
+                          <div class=''>
+                            <img src='img/dashboard image.png' style='height:161px; width:100%' />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
           <!-- panel-->
           <div class="panel js-panel">
-            <div class='platform_title_block'>
-                <div class=''>
-                    <div class="container__title title title_lg">My Platform</div>
-                </div>
-                <div class=''>
-                    <Button class='btn btn_icon add_platform'><a href='addNewPlatform.html' style='color:white'><i class='la la-plus' style='margin-right:10px'></i>Add Platform</a></Button>
-                </div>
-            </div>
+            <div class="panel__head panel__head_line">
 
-            <div class="panel__head" style='margin-top:10px'>
+                <div class="panel__group btn-group btn-group_tabs">
+                    <div class="sort js-sort">
+                      <div class="js-sort-head">
+                      <div class="" style='color:black; font-size:16px;font-weight: 600;'>Oders Overview <i class="la la-angle-down "></i></div>
+                    </div>
+                    <div class="sort__dropdown js-sort-dropdown">
+                    <div class="sort__items">
+                        <div class="sort__item"><label class="switch sort__switch js-sort-switch"><input class="switch__input" type="radio" name="sort" checked="checked" /><span class="switch__content">A-Z</span></label></div>
+                        <div class="sort__item"><label class="switch sort__switch js-sort-switch"><input class="switch__input" type="radio" name="sort" /><span class="switch__content">Budget</span></label></div>
+                        <div class="sort__item"><label class="switch sort__switch js-sort-switch"><input class="switch__input" type="radio" name="sort" /><span class="switch__content">Assigned Tasks</span></label></div>
+                        <div class="sort__item"><label class="switch sort__switch js-sort-switch"><input class="switch__input" type="radio" name="sort" /><span class="switch__content">Progress</span></label></div>
+                        <div class="sort__item"><label class="switch sort__switch js-sort-switch"><input class="switch__input" type="radio" name="sort" /><span class="switch__content">Date Created</span></label></div>
+                    </div>
+                    <div class="sort__foot"><button class="sort__btn btn btn_light js-sort-apply">Apply</button></div>
+                    </div>
+                    <div class="sort__backdrop backdrop js-sort-backdrop"></div>
+                  </div>
+                </div>
                 <div class="panel__group">
-                  <div class='platform_lorem_ipsum'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum been the industry's standard dummy text ever</div>
-                </div>
-                <div class="panel__group action-group" style='margin-top: 10px;'>
-                    <button class="action action_title custom_action active" style='padding:0px;margin-right: 17px;'><i class='la la-bars'></i></button>
-                    <button class="action action_title custom_action"  style='padding:0px;margin-right: 17px;'><i class="la la-bar-chart-o"></i></button>
-                    <button class="action action_title custom_action"  style='padding:0px;margin-right: 17px;'><i class="la la-bar-chart-o"></i></button>
-                    <button class="action action_title custom_action"  style='padding:0px;margin-right: 17px;'><i class="la la-filter "></i></button>
-                </div>
+                    <button style='font-size:14px; color:#63a1fd'>View All <i class='la la-angle-right'></i></button>
+                  </div>
+              
+              
             </div>
-
             <div class="panel__body">
               <div class="panel__tab js-panel-tab" style="display: block">
                 <!-- data-->
                 <div class="data data_list">
                   <div class="data__container">
-                    
                     <div class="data__body">
                         <div class="data__item orders_data_item">
                             <div class="data__row">
                               <div class="data__cell data__cell_lg">
-                                  <div class="data__main">
-                                      
-                                      <div class="data__wrap">
-                                          <div class="data__label">Platform Name</div>
-                                          <div class="data__content">Tech Sumo</div>
-                                      </div>
-                                      <div class="data__preview" style='background:#fff'><img class="data__pic" src="img/user-1.jpg" width='35px' style='border-radius:50%' alt="Product"></div>
+                                <div class="data__main">
+                                  <div class="data__preview" style='background:#fff'><img class="data__pic" src="img/user-1.jpg" width='40px' style='border-radius:50%' alt="Product"></div>
+                                  <div class="data__wrap">
+                                      <div class="data__content" style='margin-top:-28px'><strong>John Smith</strong></div>
                                   </div>
+                                </div>
                               </div>
-                              <div class="data__cell  mobile-text-right">
-                                  <div class="data__label">Platform Type</div>
-                                  <div class="data__content">Social Media</div>
+                              <div class="data__cell data__cell_lg  mobile-hide">
+                                  <div class="data__content"><strong>A guide to publish a book...</strong></div>
+                                  <div class="data__label" style='margin-top: 10px;'>News Portal/Blog</div>
                               </div>
-                              <div class="data__cell   mobile-hide">
-                                  <div class="data__label">Platform</div>
-                                  <div class="data__content">Youtube</div>
-                              </div>
-                              <div class="data__cell  mobile-hide">
-                                  <div class="data__label">Followers</div>
-                                  <div class="data__content" style='color: #F4BE5E;'><i class='la la-arrow-up' style='color: #F4BE5E;'></i>7.17 M</div>
-                              </div>
-                              <div class="data__cell data__cell_lg mobile-hide">
-                                  <div class="data__label">Services</div>
-                                  <div class="data__content">Advertisement Promotion</div>
+                              <div class="data__cell mobile-text-right">
+                                  <div class="data__label">Price</div>
+                                  <div class="data__content">299 USd</div>
                               </div>
                               
-                              <div class="data__cell mobile-hide">
-                                  <div class='tag yellow' style='height:35px !important; padding:0px 12px !important; background-color:#baf2e2;color:#39daad'>Active</div>
+                              <div class="data__cell  mobile-hide">
+                                  <div class="data__label" >Recieve on</div>
+                                  <div class="data__content">28 Apr, 2021</div>
+                              </div>
+                              
+                              <div class="data__cell  mobile-hide">
+                                  <div class="data__label">Country</div>
+                                  <div class="data__content wallet_india">India</div>
                                   
                               </div>
-                              <div class="data__cell mobile-hide" >
-                                  <Button class='tag gray' style='height:35px !important; padding:0px 10px !important;' >Edit Platform</Button>
+                              <div class="data__cell  mobile-hide" >
+                                  <div class="data__label">Status</div>
+                                  <div class="data__content" style='color: #20cd57;'>Processing</div>
                               </div>
-                              <div id='myBtn' class="data__cell data__cell_action mobile-hide"><button class="action action_stroke" style='border:0px'><i class='la la-eye'></i></button></div>
+                              <div class="data__cell data__cell_action mobile-hide"><button class="action action_stroke" style='border:0px'><i class='la la-eye'></i></button></div>
+                              <div class="data__cell data__cell_action mobile-hide"><button class="action action_stroke" style='border:0px'><i class='la la-ellipsis-v'></i></button></div>
                             </div>
                         </div>
                         <div class="data__item orders_data_item">
                             <div class="data__row">
                                 <div class="data__cell data__cell_lg">
                                     <div class="data__main">
-                                        
-                                        <div class="data__wrap">
-                                            <div class="data__label">Platform Name</div>
-                                            <div class="data__content">Tech Sumo</div>
-                                        </div>
-                                        <div class="data__preview" style='background:#fff'><img class="data__pic" src="img/user-1.jpg" width='35px' style='border-radius:50%' alt="Product"></div>
+                                    <div class="data__preview" style='background:#fff'><img class="data__pic" src="img/user-1.jpg" width='40px' style='border-radius:50%' alt="Product"></div>
+                                    <div class="data__wrap">
+                                       <div class="data__content" style='margin-top:-28px'><strong>John Smith</strong></div>
+                                    </div>
                                     </div>
                                 </div>
-                                <div class="data__cell  mobile-text-right">
-                                    <div class="data__label">Platform Type</div>
-                                    <div class="data__content">Social Media</div>
-                                </div>
-                                <div class="data__cell   mobile-hide">
-                                    <div class="data__label">Platform</div>
-                                    <div class="data__content">Youtube</div>
-                                </div>
-                                <div class="data__cell  mobile-hide">
-                                    <div class="data__label">Followers</div>
-                                    <div class="data__content" style='color:#39daad ;'><i class='la la-arrow-up' style='color: #39daad;'></i>7.17 M</div>
-                                </div>
                                 <div class="data__cell data__cell_lg mobile-hide">
-                                    <div class="data__label">Services</div>
-                                    <div class="data__content">Ads Promotion</div>
+                                    <div class="data__content"><strong>A guide to publish a book...</strong></div>
+                                    <div class="data__label" style='margin-top: 10px;'>News Portal/Blog</div>
+                                </div>
+                                <div class="data__cell mobile-text-right ">
+                                    <div class="data__label">Price</div>
+                                    <div class="data__content">299 USd</div>
                                 </div>
                                 
-                                <div class="data__cell mobile-hide">
-                                    <div class='tag yellow' style='height:35px !important; padding:0px 12px !important; background:#fdc748; color:#d99f16'>Pending</div>
+                                <div class="data__cell  mobile-hide">
+                                    <div class="data__label" >Recieve on</div>
+                                    <div class="data__content">28 Apr, 2021</div>
+                                </div>
+                                
+                                <div class="data__cell  mobile-hide">
+                                    <div class="data__label">Country</div>
+                                    <div class="data__content wallet_india">India</div>
                                     
                                 </div>
-                                <div class="data__cell mobile-hide" >
-                                    <Button class='tag gray' style='height:35px !important; padding:0px 10px !important;' >Edit Platform</Button>
+                                <div class="data__cell  mobile-hide" >
+                                    <div class="data__label">Status</div>
+                                    <div class="data__content" style='color: #efdb30;'>Pending</div>
                                 </div>
                                 <div class="data__cell data__cell_action mobile-hide"><button class="action action_stroke" style='border:0px'><i class='la la-eye'></i></button></div>
+                                <div class="data__cell data__cell_action mobile-hide"><button class="action action_stroke" style='border:0px'><i class='la la-ellipsis-v'></i></button></div>
                             </div>
                         </div>
-                          <div class="data__item orders_data_item">
+                        <div class="data__item orders_data_item">
                             <div class="data__row">
                                 <div class="data__cell data__cell_lg">
                                     <div class="data__main">
-                                        
-                                        <div class="data__wrap">
-                                            <div class="data__label">Platform Name</div>
-                                            <div class="data__content">Tech Sumo</div>
-                                        </div>
-                                        <div class="data__preview" style='background:#fff'><img class="data__pic" src="img/user-1.jpg" width='35px' style='border-radius:50%' alt="Product"></div>
+                                    <div class="data__preview" style='background:#fff'><img class="data__pic" src="img/user-1.jpg" width='40px' style='border-radius:50%' alt="Product"></div>
+                                    <div class="data__wrap">
+                                       <div class="data__content" style='margin-top:-28px'><strong>John Smith</strong></div>
+                                    </div>
                                     </div>
                                 </div>
-                                <div class="data__cell  mobile-text-right">
-                                    <div class="data__label">Platform Type</div>
-                                    <div class="data__content">Social Media</div>
+                                <div class="data__cell data__cell_lg mobile-hide ">
+                                    <div class="data__content"><strong>A guide to publish a book...</strong></div>
+                                    <div class="data__label" style='margin-top: 10px;'>News Portal/Blog</div>
                                 </div>
-                                <div class="data__cell   mobile-hide">
-                                    <div class="data__label">Platform</div>
-                                    <div class="data__content">Youtube</div>
-                                </div>
-                                <div class="data__cell  mobile-hide">
-                                    <div class="data__label">Followers</div>
-                                    <div class="data__content" style='color: #F4BE5E;'><i class='la la-arrow-up' style='color: #F4BE5E;'></i>7.17 M</div>
-                                </div>
-                                <div class="data__cell data__cell_lg mobile-hide">
-                                    <div class="data__label">Services</div>
-                                    <div class="data__content">Advertisement Promotion</div>
+                                <div class="data__cell mobile-text-right ">
+                                    <div class="data__label">Price</div>
+                                    <div class="data__content">299 USd</div>
                                 </div>
                                 
-                                <div class="data__cell mobile-hide">
-                                    <div class='tag yellow' style='height:35px !important; padding:0px 12px !important; background-color:#f9e6fc;color:#da72ee'>Inactive</div>
+                                <div class="data__cell  mobile-hide">
+                                    <div class="data__label" >Recieve on</div>
+                                    <div class="data__content">28 Apr, 2021</div>
+                                </div>
+                                
+                                <div class="data__cell  mobile-hide">
+                                    <div class="data__label">Country</div>
+                                    <div class="data__content wallet_india">India</div>
                                     
                                 </div>
-                                <div class="data__cell mobile-hide" >
-                                    <Button class='tag gray' style='height:35px !important; padding:0px 10px !important;' >Edit Platform</Button>
+                                <div class="data__cell  mobile-hide" >
+                                    <div class="data__label">Status</div>
+                                    <div class="data__content" style='color: #20cd57;'>Completed</div>
                                 </div>
                                 <div class="data__cell data__cell_action mobile-hide"><button class="action action_stroke" style='border:0px'><i class='la la-eye'></i></button></div>
+                                <div class="data__cell data__cell_action mobile-hide"><button class="action action_stroke" style='border:0px'><i class='la la-ellipsis-v'></i></button></div>
                             </div>
                           </div>
                           <div class="data__item orders_data_item">
                             <div class="data__row">
                                 <div class="data__cell data__cell_lg">
                                     <div class="data__main">
-                                        
-                                        <div class="data__wrap">
-                                            <div class="data__label">Platform Name</div>
-                                            <div class="data__content">Tech Sumo</div>
-                                        </div>
-                                        <div class="data__preview" style='background:#fff'><img class="data__pic" src="img/user-1.jpg" width='35px' style='border-radius:50%' alt="Product"></div>
+                                    <div class="data__preview" style='background:#fff'><img class="data__pic" src="img/user-1.jpg" width='40px' style='border-radius:50%' alt="Product"></div>
+                                    <div class="data__wrap">
+                                       <div class="data__content" style='margin-top:-28px'><strong>John Smith</strong></div>
+                                    </div>
                                     </div>
                                 </div>
-                                <div class="data__cell  mobile-text-right">
-                                    <div class="data__label">Platform Type</div>
-                                    <div class="data__content">Social Media</div>
-                                </div>
-                                <div class="data__cell   mobile-hide">
-                                    <div class="data__label">Platform</div>
-                                    <div class="data__content">Youtube</div>
-                                </div>
-                                <div class="data__cell  mobile-hide">
-                                    <div class="data__label">Followers</div>
-                                    <div class="data__content" style='color:#39daad ;'><i class='la la-arrow-up' style='color: #39daad;'></i>7.17 M</div>
-                                </div>
                                 <div class="data__cell data__cell_lg mobile-hide">
-                                    <div class="data__label">Services</div>
-                                    <div class="data__content">Ads Promotion</div>
+                                    <div class="data__content"><strong>A guide to publish a book...</strong></div>
+                                    <div class="data__label" style='margin-top: 10px;'>News Portal/Blog</div>
+                                </div>
+                                <div class="data__cell mobile-text-right">
+                                    <div class="data__label">Price</div>
+                                    <div class="data__content">299 USd</div>
                                 </div>
                                 
-                                <div class="data__cell mobile-hide">
-                                    <div class='tag yellow' style='height:35px !important; padding:0px 12px !important; background:#fdc748; color:#d99f16'>Pending</div>
+                                <div class="data__cell  mobile-hide">
+                                    <div class="data__label" >Recieve on</div>
+                                    <div class="data__content">28 Apr, 2021</div>
+                                </div>
+                                
+                                <div class="data__cell  mobile-hide">
+                                    <div class="data__label">Country</div>
+                                    <div class="data__content wallet_india">India</div>
                                     
                                 </div>
-                                <div class="data__cell mobile-hide" >
-                                    <Button class='tag gray' style='height:35px !important; padding:0px 10px !important;' >Edit Platform</Button>
+                                <div class="data__cell  mobile-hide" >
+                                    <div class="data__label">Status</div>
+                                    <div class="data__content" style='color: #20cd57;'>Processing</div>
                                 </div>
                                 <div class="data__cell data__cell_action mobile-hide"><button class="action action_stroke" style='border:0px'><i class='la la-eye'></i></button></div>
+                                <div class="data__cell data__cell_action mobile-hide"><button class="action action_stroke" style='border:0px'><i class='la la-ellipsis-v'></i></button></div>
+                              </div>
                             </div>
-                        </div>
-                        
+
+
+
+                      
+                      
+                      
                       
                       
                       
@@ -520,98 +600,7 @@
         </div>
       </div>
     </div><!-- modals-->
-    <div id="myModal" class="modal modal_width_set js-modal">
-      <div class="modal__container js-modal-container platform_modal">
-        <div class='close'>close<i class='la la-close' style='margin-left:5px;margin-top: 2px;font-size: 13px;'></i></div>
-        <div class="modal__body">
-          <!-- invoice-->
-          <div class="invoice">
-            <div class="">
-              
-              <div class="invoice__inner">
-                
-                <!-- table-->
-                <table class="invoice__table table popup_modal">
-                  <thead>
-                      <tr class="popup_header" style='border-radius:10px 10px 0px 0px'>
-                      <th style='background:#fff; font-weight: 100;' >Platform Name</th>
-                      <th style='background:#fff;font-weight: 100; '>Platform Type</th>
-                      <th style='background:#fff; font-weight: 100;'>Platform</th>
-                      <th style='background:#fff;font-weight: 100;'>Followers</th>
-                      <th class="text-right" style='background:#fff'>Services</th>
-                    </tr>
-                    <tr>
-                      <th style='background:#fff'>Tech Sumo</th>
-                      <th style='background:#fff'>Social Media</th>
-                      <th style='background:#fff'>Youtube</th>
-                      <th style='background:#fff'><i class='la la-arrow-up'></i> 7.18M</th>
-                      <th class="text-right" style='background:#fff'>Advertisement, Promotion</th>
-                     
-                    </tr>
-                    <tr class='modal_sub_title_block' style='margin-top:20px'>
-                      <th class="modal_sub_title" style='background:#fff; margin-top:20px'># No</th>
-                      <th class="modal_sub_title" style='background:#fff'>Services</th>
-                      <th class="modal_sub_title" style='background:#fff'>Publish Website Link</th>
-                      <th class="modal_sub_title" style='background:#fff'>Also Share With</th>
-                      <th class="text-right modal_sub_title" style='background:#fff'>Price</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>#1 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                     <td>#1 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                       <td>#1 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                      <td>#1 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                  
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- scripts-->
-    <script>
-      var modal = document.getElementById("myModal");
-      var btn = document.getElementById("myBtn");
-      var span = document.getElementsByClassName("close")[0];
-      btn.onclick = function() {
-        modal.style.display = "block";
-      }
-      span.onclick = function() {
-        modal.style.display = "none";
-      }
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-    </script>
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/datepicker.min.js"></script>
     <script src="js/lib/datepicker.en.js"></script>

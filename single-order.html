@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Product Settings</title>
+    <title>Order Details</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#fff">
@@ -21,14 +21,17 @@
     <meta property="og:description" content="Description Here">
     <meta property="og:site_name" content="Site Name, i.e. Moz">
     <meta property="fb:admins" content="Facebook numeric ID">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" media="all" href="css/app.css"><!-- favicon-->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,500&display=swap" rel="stylesheet">
+    <!-- favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="img/site.webmanifest">
     <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
+    <link rel="stylesheet" media="all" href="css/app.css">
   </head>
   <body>
     <!-- page-->
@@ -44,19 +47,19 @@
             <div class="nav__list">
               <!-- mobile primary menu-->
               <div class="nav__primary js-nav-primary">
-                <div class="nav__group"><a class="nav__link active" href="#" title="Dashboard">
+                <div class="nav__group"><a class="nav__link active" href="dashboard.html" title="Dashboard">
                     <div class="nav__preview"><i class="la la-tachometer-alt "></i></div>
                     <div class="nav__title">Dashboard</div>
-                  </a><a class="nav__link" href="#" title="Projects">
+                  </a><a class="nav__link" href="orders.html" title="Projects">
                     <div class="nav__preview"><i class="la la-toolbox "></i></div>
                     <div class="nav__title">My Orders</div>
-                  </a><a class="nav__link" href="#" title="Tasks">
+                  </a><a class="nav__link" href="platform.html" title="Tasks">
                     <div class="nav__preview"><i class="la la-clipboard-check "></i></div>
                     <div class="nav__title">Platform</div>
-                  </a><a class="nav__link" href="#" title="Kanban">
+                  </a><a class="nav__link" href="wallet.html" title="Kanban">
                     <div class="nav__preview"><i class="la la-images "></i></div>
                     <div class="nav__title">Wallet</div>
-                  </a><a class="nav__link" href="#" title="Calendar">
+                  </a><a class="nav__link" href="single-order1.html" title="Calendar">
                     <div class="nav__preview"><i class="la la-calendar-week "></i></div>
                     <div class="nav__title">Reports</div>
                   </a><a class="nav__link nav__link_menu js-nav-link-menu" href="#">
@@ -73,7 +76,7 @@
       <div class="container js-container">
         <div class="container__head">
           <!--  <button class="container__action container__action_menu action js-container-toggle"><i class="la la-bars "></i></button> -->
-          <div class="container__title title title_sm"><a href="#"><i class="la la-arrow-left"></i> Back</a></div> <!-- search-->
+          <div class="container__title title title_sm"><a href="dashboard.html"><i class="la la-arrow-left"></i> Back</a></div> <!-- search-->
           <div class="container__search search js-search">
              <button class="search__action action js-search-open custom_action" style='padding:0'><i class="la la-bell "></i></button>
             
@@ -243,9 +246,9 @@
                           <div class="overview__value">Status</div>
                           
                         </div>
-                        <div class="overview__col daysleft">
+                        <div  class="overview__col daysleft">
                          <!--  <div class="overview__preview gray"><i class="la la-keyboard "></i></div> -->
-                         <a class="empty__btn btn" href="#"> <i class="la la-clock "></i> &nbsp;5 days left</a>
+                         <a  class="empty__btn btn" href="#"> <i class="la la-clock "></i> &nbsp;5 days left</a>
                           <div class="overview__label">Feb 23, 2021</div>
                         </div>
                       </div>
@@ -264,7 +267,12 @@
                         </div>
                       </div>
                         <div class="overview__row submit_btn">
-                          <a class="empty__btn btn submit_work" href="#">Submit work</a>
+                          <a id='myBtn' class="empty__btn btn submit_work" href="#">Submit work</a>
+
+                        </div>
+                         <div class="overview__row review_btn">
+                          <a class="empty__btn btn submit_work" href="#">In Review</a>
+                          
                         </div>
 
                     </div>
@@ -364,10 +372,32 @@
 
                      <div class="report-send">
 
-                    <input type="text" name="text" placeholder="Type your message here.....">
+                    <input type="text" name="text" placeholder="Type your message">
                     <button class="btnsend"><i class="la la-send"></i></button>
                  
                  
+                </div>
+
+
+                <div class="chating-description">
+                  <div class="job_details">
+                      <h4>Job Title</h4>
+                      <p>Content writer</p>
+
+                       <h4>Platform</h4>
+                      <p>Content writer</p>
+
+                       <h4>Media Type</h4>
+                      <p>All socialmeia</p>
+                    
+
+                    </div>
+
+                    <div class="overview__row submit_btn">
+                          <a class="empty__btn btn submit_work" href="#">Chat With Agent</a>
+
+                        </div>
+
                 </div>
                   </div> 
 
@@ -378,7 +408,87 @@
         </div>
       </div>
     </div><!-- modals-->
+    
+
+
+
+
+
+
+
+    <div id="myModal" class="modal modal_width_set js-modal">
+      <div class="modal__container js-modal-container projects_modal">
+        <div class='close'>close<i class='la la-close' style='margin-left:5px;margin-top: 2px;font-size: 13px;'></i></div>
+        <div class="modal__body">
+          <!-- invoice-->
+          <div class="settings">
+            <div class="settings__container">
+              <div class="settings__inner" style='margin-bottom: 6px;'>
+                <div class="settings__tab" style="display: block" data-tabs-group="settings" data-tabs-item="01">
+                  <div class="form form_settings">
+                    <div class="form__row">
+                      <div class="form__col modal_form_field">
+                        <div class="field form__field ">
+                          <div class="field__label">Work Completed Link</div>
+                          <div class="field__wrap"><input class="field__input" type="text" placeholder="Add the link of your work">
+                            <div class="field__icon"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__row">
+                      <div class="form__col modal_form_field">
+                        <div class="field form__field">
+                          <div class="field__label">Description</div>
+                          <div class="field__wrap"><input class="field__input" type="email" placeholder="Add some description of the project"></input>
+                            <div class="field__icon"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__row">
+                      <div class="form__col modal_form_field">
+                        <div class="field form__field">
+                          <div class="field__label">Upload Files</div>
+                          <div class="field__wrap"><input class="field__input" type="email" placeholder="Add your files here">
+                            <div class="field__icon"><i class="la la-file"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="settings__foot">
+                <div class="settings__btns"><button class="settings__btn btn">Submit work</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
     <!-- scripts-->
+    <script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/datepicker.min.js"></script>
     <script src="js/lib/datepicker.en.js"></script>

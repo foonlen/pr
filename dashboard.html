@@ -21,16 +21,18 @@
     <meta property="og:description" content="Description Here">
     <meta property="og:site_name" content="Site Name, i.e. Moz">
     <meta property="fb:admins" content="Facebook numeric ID">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,500&display=swap" rel="stylesheet">
     
-    
-    <link rel="stylesheet" media="all" href="css/app.css"><!-- favicon-->
+    <!-- favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="img/site.webmanifest">
     <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
+    <link rel="stylesheet" media="all" href="css/app.css">
   </head>
   <body>
     <!-- page-->
@@ -55,10 +57,10 @@
                   </a><a class="nav__link" href="platform.html" title="Tasks">
                     <div class="nav__preview"><i class="la la-clipboard-check "></i></div>
                     <div class="nav__title">Platform</div>
-                  </a><a class="nav__link" href="wallet1.html" title="Kanban">
+                  </a><a class="nav__link" href="wallet.html" title="Kanban">
                     <div class="nav__preview"><i class="la la-images "></i></div>
                     <div class="nav__title">Wallet</div>
-                  </a><a class="nav__link" href="single-order1.html" title="Calendar">
+                  </a><a class="nav__link" href="single-order.html" title="Calendar">
                     <div class="nav__preview"><i class="la la-calendar-week "></i></div>
                     <div class="nav__title">Reports</div>
                   </a><a class="nav__link nav__link_menu js-nav-link-menu" href="#">
@@ -81,7 +83,7 @@
             <div class="new__dropdown js-new-dropdown"><a class="new__item" href="profile.html">
                 <div class="new__icon"><i class="la la-toolbox "></i></div>
                 <div class="new__title">Profile</div>
-              </a><a class="new__item" href="wallet1.html">
+              </a><a class="new__item" href="wallet.html">
                 <div class="new__icon"><i class="la la-clipboard-check "></i></div>
                 <div class="new__title">Wallet</div>
               </a><a class="new__item" href="#">
@@ -95,17 +97,10 @@
           </div>
         </div>
         <div class="container__body">
-
-
-           
-
-
-
-
             <div class="layout dashboard_banner">
                 <div class="layout__row ">
                   <!-- panel-->
-                    <div class="layout__panel layout__panel_x2 panel" style='padding:0px 24px; '>
+                    <div class="layout__panel layout__panel_x2 panel welcome_user_banner">
                         
                         <div class="panel__body panel__body_bg">
                             <div class="panel__tab js-panel-tab">
@@ -123,30 +118,23 @@
                     </div>
                 
                 <!-- panel-->
-                    <div class="layout__panel panel new_wallet_block" style='padding:0px 24px; '>
+                    <div class="layout__panel panel new_wallet_block welcome_user_banner">
                         <div class="panel__body panel__body_bg">
                             <p class='dashbboard_left_block_wallet' >Wallet</p>
                             <p class='dashbboard_left_block_wallet_amount'>$56400</p>
                             <p class='dashbboard_left_block_wallet_pending'>Pending $78</p>
-                            <p class='data__label wallet_click_here' style='color: #8181a5;margin-bottom: 11px;'>Click here to view</p>
+                            <p class='data__label wallet_click_here' style='color: #8181a5;'>Click here to view</p>
                         </div>
                     </div>
                 </div>
               </div>
-            
-
-
-
-            
-
-
-            
+           
           <!-- layout-->
         <div class="layout" class='dashboard_orders_table'>
             <div class="layout__row dashboard_table_row">
               <!-- panel-->
-                <div class="layout__panel layout__panel_x2 panel">
-                    <div class="panel__head">
+                <div class="layout__panel layout__panel_x2 panel dashboard_panel">
+                    <div class="panel__head dashboard_panel_head">
                         <div class="panel__group">
                             <div class="panel__title title">Orders</div>
                         </div>
@@ -159,7 +147,7 @@
                                         <div class="data__item">
                                             <div class="data__row">
                                                 <div class="data__cell data__cell_lg">
-                                                    <div class="data__main">
+                                                    <div class="data__main dashboard_data_main">
                                                         <div class="data__preview"><img src='img/user-1.jpg' style='border-radius:10px' /></div>
                                                         <div class="data__wrap">
                                                             <div class=" data__label">PN001265</div>
@@ -187,7 +175,7 @@
                                         <div class="data__item">
                                             <div class="data__row">
                                                 <div class="data__cell data__cell_lg">
-                                                    <div class="data__main">
+                                                    <div class="data__main dashboard_data_main">
                                                         <div class="data__preview"><img src='img/user-1.jpg' style='border-radius:10px' /></div>
                                                         <div class="data__wrap">
                                                             <div class=" data__label">PN001265</div>
@@ -215,7 +203,7 @@
                                         <div class="data__item">
                                             <div class="data__row">
                                                 <div class="data__cell data__cell_lg">
-                                                    <div class="data__main">
+                                                    <div class="data__main dashboard_data_main">
                                                         <div class="data__preview"><img src='img/user-1.jpg' style='border-radius:10px' /></div>
                                                         <div class="data__wrap">
                                                             <div class=" data__label">PN001265</div>
@@ -243,7 +231,7 @@
                                         <div class="data__item">
                                             <div class="data__row">
                                                 <div class="data__cell data__cell_lg">
-                                                    <div class="data__main">
+                                                    <div class="data__main dashboard_data_main">
                                                         <div class="data__preview"><img src='img/user-1.jpg' style='border-radius:10px' /></div>
                                                         <div class="data__wrap">
                                                             <div class=" data__label">PN001265</div>
@@ -276,7 +264,7 @@
                 </div>
             
             <!-- panel-->
-              <div class="layout__panel panel">
+              <div class="layout__panel panel dashboard_panel">
                 <div class="panel__head panel__head_line">
                   <div class="panel__group">
                     <div class="panel__title title">Overview</div>
@@ -286,7 +274,7 @@
                 <div class="panel__body panel__body_bg">
                   
 
-                    <div class="overview overview_line" style='flex-wrap:unset'>
+                    <div class="overview overview_line">
                         <div class="overview__item" style='border: 1px solid #f0f0f3; padding:20px 12px'>
                             <div class="overview__row" style='margin-bottom:0px' >
                                 <div class="overview__col" >
@@ -309,7 +297,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="overview overview_line" style='flex-wrap:unset'>
+                    <div class="overview overview_line">
                         <div class="overview__item" style='border: 1px solid #f0f0f3; padding:20px 12px'>
                             <div class="overview__row"  style='margin-bottom:0px !important'>
                                 <div class="overview__col" >
@@ -334,14 +322,13 @@
                     </div>
                 </div>
             </div>
-           
-              
-            </div>
-          </div>
         </div>
-      </div>
-    </div><!-- modals-->
-    <!-- scripts-->
+    </div>
+</div>
+</div>
+</div>
+<!-- modals-->
+<!-- scripts-->
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/datepicker.min.js"></script>
     <script src="js/lib/datepicker.en.js"></script>

@@ -10714,8 +10714,8 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  
+  font-family: 'Poppins', sans-serif;
+  /* font-family: "Lato", sans-serif; */
   font-size: 14px;
   color: #1c1d21;
   line-height: 1.5;
@@ -12813,9 +12813,9 @@ img {
 .new__dropdown {
   display: none;
   position: absolute;
-  top: 46px;
+  top: 40px;
   right: 0;
-  width: 286px;
+  width: 157px;
   background: white;
   border-radius: 6px;
   z-index: 99;
@@ -15121,7 +15121,14 @@ img {
   display: none;
 }
 
+.dashboard_panel_head{
+  margin-bottom: 7px;
+}
+
 @media only screen and (min-width: 1340px) {
+  .welcome_user_banner{
+    padding: 0px 24px !important; 
+  }
   .dashboard_table_row {
     margin-top: 23px;
   }
@@ -15140,6 +15147,9 @@ img {
 }
 
 @media only screen and (max-width: 1339px) {
+  .welcome_user_banner{
+    padding: 0px 24px !important; 
+  }
   .dashboard_table_row {
     margin-top: 23px;
   }
@@ -15164,6 +15174,9 @@ img {
   /* .dashboard_banner {
     margin-bottom: 6px;
   } */
+  .welcome_user_banner{
+    padding: 0px 24px !important; 
+  }
   .auth__inner {
     padding-right: 60px;
   }
@@ -15197,6 +15210,12 @@ img {
 }
 
 @media only screen and (max-width: 1023px) {
+  .welcome_user_banner{
+    padding: 0px 24px !important; 
+  }
+  .withdraw_wallet{
+    margin-left:36px !important;
+  }
   .new_wallet_block {
     margin-bottom: 58px !important;
   }
@@ -15341,6 +15360,34 @@ img {
 }
 
 @media only screen and (max-width: 767px) {
+  .dashboard_panel{
+    background-color: #fff !important;
+    padding:24px 12px !important;
+  }
+  .dashboard_panel_head{
+    margin-bottom: -24px !important;
+  }
+  .dashboard_data_main{
+    padding-left:0px !important;
+  }
+  .profiledetails_tabs .btn-group_tabs .btn.active{
+    color: white;
+  }
+  .orders_btn_panel {
+    background:#eff2fe;
+  }
+
+  .orders_btn_panel  .btn.active {
+    color:white !important;
+  }
+
+
+  .wallet_click_here{
+    padding-bottom: 0px !important;
+  }
+  .welcome_user_banner{
+    padding:0px !important;
+  }
   .orders_title{
     margin-top: 10px;
   }
@@ -16377,7 +16424,7 @@ img {
   color: #51d87d;
 }
 .wallet_first_block_details {
-  color: #bdbec4;
+  color: #8181a5;
   margin-bottom: 17px;
 }
 .wallet_second_block {
@@ -16399,9 +16446,14 @@ img {
   margin-right: 94px;
 }
 .addNewPlatformPanel {
-  padding: 52px 72px;
+  padding: 24px;
   box-shadow: 0 0 5px #ddd;
   background: #fff;
+}
+.addNewPlatformFormSettings{
+  margin-top:29px;
+  margin-bottom: -27px;
+  padding:24px
 }
 .addServicesPanel {
   padding: 0 5px;
@@ -16427,7 +16479,10 @@ img {
 .mainAddServicesPanel {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-  padding: 24px 0px 0px 0px;
+  padding: 24px;
+}
+.addNewPlatformDataList{
+  padding:24px !important
 }
 .services_form_row {
   margin-top: 17px;
@@ -16467,14 +16522,12 @@ img {
   border-radius: 8px;
   box-shadow: 0 0 5px #ddd;
   color: #fff;
-
-  margin-top: 24px;
 }
 .view_transaction_history {
   font-weight: 600;
   text-align: center;
   margin-bottom: 37px;
-  margin-top: 25px;
+  margin-top: 18px;
 }
 .withdraw_title {
   text-align: center;
@@ -16896,9 +16949,19 @@ img {
   .description_details {
     margin-top: -70px !important;
   }
+  
 }
 
 @media only screen and (max-width: 1023px) {
+  .add_more_services{
+    margin-top: 0px ;
+  }
+  .save_this_platform{
+    margin-top: 18px;
+  }
+  .main_share_block{
+    padding:24px 0px;
+  }
   .settings__sidebar .content__wrap .content__title {
     margin-top: 20px;
   }
@@ -16947,6 +17010,15 @@ img {
 }
 
 @media only screen and (max-width: 767px) {
+  .addNewPlatformDataItem{
+    padding:0px;
+  }
+  .main_share_block_panel{
+    padding:0px;
+  }
+  .mainAddServicesPanel{
+    padding:0px;
+  }
   .withdraw_page_title{
     margin-top:24px;
   }
@@ -17036,7 +17108,7 @@ img {
 
 @media only screen and (max-width: 360px) {
   .overview_line {
-    display: block;
+    display: flex;
   }
   .single_over_item {
     font-size: 11px;
@@ -17049,6 +17121,12 @@ img {
   }
   .wallet_left_block {
     display: block;
+  }
+  .share_block{
+    display: block;
+  }
+  .addNewPlatformDataList{
+    padding:0px !important;
   }
 }
 
@@ -17368,7 +17446,7 @@ img {
 .image-text {
   background: #ffffff;
   border-radius: 10px;
-  margin-top: -29px;
+  margin-top: -13px;
   border: 1px solid #ddd;
   padding: 6px 6px;
   position: relative;
@@ -17426,6 +17504,15 @@ img {
   padding-left: 30px;
   font-size: 28px;
 }
+.platform_lorem_ipsum{
+  margin-top:-22px;
+}
+.platform_panel_head{
+  margin-bottom: 0px;
+}
+.wallet_panel_head{
+  margin-bottom: 7px;
+}
 
 @media only screen and (min-width: 1023px) {
   .description_details {
@@ -17434,6 +17521,12 @@ img {
 }
 
 @media only screen and (max-width: 1023px) {
+  .wallet_first_block{
+    margin-left: 0px;
+  }
+  .platform_lorem_ipsum{
+    margin-top:0px;
+  }
   .settings__sidebar .content__wrap .content__title {
     margin-top: 20px;
   }
@@ -17479,6 +17572,13 @@ img {
 }
 
 @media only screen and (max-width: 767px) {
+  .platform_lorem_ipsum{
+    margin-top:10px;
+  }
+  .platform_panel{
+    background:#fff;
+    padding:24px;
+  }
   .auth__main {
     padding: 50px 32px;
   }
@@ -17513,6 +17613,9 @@ img {
 }
 
 @media only screen and (max-width: 500px) {
+  .platform_action_group{
+    margin-top:10px;
+  }
   .title_xl {
     font-size: 24px;
     line-height: 1.3125;
@@ -17543,12 +17646,33 @@ img {
 }
 
 @media only screen and (max-width: 360px) {
+  .platform_action_group{
+    margin-top:10px;
+  }
   .single_over_item {
     font-size: 11px;
   }
   .userprofilename {
     display: none;
   }
+}
+@media only screen and (max-width: 360px) {
+  .image-tag {
+    margin-bottom: 10px;
+  }
+ .image_attached {
+    display: block;
+    margin-top: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .report-send input{
+    font-size: 12px;
+  }
+}
+.single_over_item .overview__progress{
+  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 1023px) and (max-width: 1125px) {
@@ -17588,3 +17712,5 @@ img {
 .add_new_platform_title{
   margin-bottom: 5px;
 }
+
+

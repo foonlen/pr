@@ -15360,14 +15360,27 @@ img {
 }
 
 @media only screen and (max-width: 767px) {
+  .project_modal_main .modal__container{
+    background:transparent !important;
+  }
+  .single_close{
+    margin-top: -60px !important;
+  }
+  /* .platform_modal{
+    background:transparent !important;
+  } */
+  .project_modal_close{
+    margin-right: -21px !important;
+    margin-top: -57px !important;
+  }
   .projects_modal {
-
-    padding: 20px;
-    background: #ffffff;
-    margin-top: 60px;
+    padding: 20px !important;
+    background: white !important;
+    margin-top: 60px !important;
+    
     }
   .invoice__inner {
-    padding: 16px;
+    padding: 0px;
     background-color: white;
   }
   .wallet_block {
@@ -16288,7 +16301,7 @@ img {
     background: white;
   }
   .invoice__inner {
-    padding: 16px;
+    padding: 0px;
   }
   .invoice__details {
     margin-bottom: 16px;
@@ -17029,6 +17042,9 @@ img {
 }
 
 @media only screen and (max-width: 767px) {
+  .single_order_modal .modal__container{
+    min-height:50%  !important;
+  }
   .addNewPlatformDataItem{
     padding:0px;
   }
@@ -17046,8 +17062,8 @@ img {
     margin-top: 11px;
   }
   .close {
-    margin-right: -5px !important;
-    margin-top: -41px !important;
+    margin-right: 11px !important;
+    margin-top: -34px;
   }
   .dashboard_main_block {
     margin-top: -30px;

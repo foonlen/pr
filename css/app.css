@@ -17665,6 +17665,22 @@ img {
 }
 
 @media only screen and (max-width: 767px) {
+
+.platform_popup_modal .modal_container {
+background:transparent;
+}
+
+.platform_popup_modal .invoice__details{
+  display:none;
+
+}
+.platform_popup_modal .close{
+position:fixed;
+}
+.platform_popup_modal{
+  padding:20px 0px;
+}
+
   .platform_lorem_ipsum{
     margin-top:25px;
   }
@@ -17820,5 +17836,14 @@ img {
 }
 
 
-
-
+.platform_popup_modal .invoice .invoice__container {
+  
+  padding-right: 0px;
+}
+.platform_popup_modal .invoice .invoice__container .invoice__content p{
+  margin-bottom: 10px;
+    font-size: 16px;
+}
+.platform_popup_modal{
+  padding: 60px 40px;
+}

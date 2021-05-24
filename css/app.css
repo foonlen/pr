@@ -15213,9 +15213,9 @@ img {
   .welcome_user_banner{
     padding: 0px 24px !important; 
   }
-  .withdraw_wallet{
+  /* .withdraw_wallet{
     margin-left:36px !important;
-  }
+  } */
   .new_wallet_block {
     margin-bottom: 58px !important;
   }
@@ -15360,6 +15360,22 @@ img {
 }
 
 @media only screen and (max-width: 767px) {
+  .projects_modal {
+
+    padding: 20px;
+    background: #ffffff;
+    margin-top: 60px;
+    }
+  .invoice__inner {
+    padding: 16px;
+    background-color: white;
+  }
+  .wallet_block {
+    padding:10px 15px;
+  }
+  .wallet_second_block {
+    margin-top: 47px !important;
+  }
   .dashboard_panel{
     background-color: #fff !important;
     padding:24px 12px !important;
@@ -16947,12 +16963,15 @@ img {
 
 @media only screen and (min-width: 1023px) {
   .description_details {
-    margin-top: -70px !important;
+    margin-top: -50px !important;
   }
   
 }
 
 @media only screen and (max-width: 1023px) {
+  .wallet_left_block {
+    padding-left:13px !important;
+  }
   .add_more_services{
     margin-top: 0px ;
   }
@@ -17514,15 +17533,15 @@ img {
   margin-bottom: 7px;
 }
 
-@media only screen and (min-width: 1023px) {
+/* @media only screen and (min-width: 1023px) {
   .description_details {
     margin-top: -70px !important;
   }
-}
+} */
 
 @media only screen and (max-width: 1023px) {
   .wallet_first_block{
-    margin-left: 0px;
+    margin-left: 13px ;
   }
   .platform_lorem_ipsum{
     margin-top:0px;
@@ -17626,8 +17645,12 @@ img {
     justify-content:flex-start'
   }
   .wallet_first_block{
-    margin-left: 0px;
+    margin-left: 0px !important;
     margin-top: 0px;
+  }
+  .withdraw_wallet{
+    margin-left: 0px !important;
+    
   }
   .wallet_second_block{
     margin-left: 0px;

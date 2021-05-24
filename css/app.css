@@ -15171,6 +15171,9 @@ img {
 }
 
 @media only screen and (max-width: 1259px) {
+  .wallet_right_block{
+    display: none;
+  }
   .dashboard_data_row .data__cell:last-child{
     padding-left: 0px !important;
   }
@@ -15218,10 +15221,6 @@ img {
 @media only screen and (max-width: 1023px) {
   .tab_hide{
     display: none;
-  }
- 
-  .view_orders{
-    padding-right: 0px !important;
   }
   .welcome_user_banner{
     padding: 0px 24px !important; 
@@ -15373,6 +15372,18 @@ img {
 }
 
 @media only screen and (max-width: 767px) {
+  .withdraw_container_search{
+    order: -1 !important;
+    margin-bottom: 0px;
+  }
+  .orders_panel{
+    background:#fff !important;
+    padding:24px !important;
+  }
+  .wallet_panel_for_table{
+    background:#fff !important; 
+    padding: 24px !important;
+  }
   .dashboard_panel_body{
     padding:0px 0px !important;
   }
@@ -16434,9 +16445,9 @@ img {
   padding: 0px 14px !important;
   height: 36px;
 }
-..platform_lorem_ipsum {
+.platform_lorem_ipsum {
   margin-top: 10px;
-  color: #8181a5;
+ 
 }
 .custom_action {
   box-shadow: 0 0 5px #ddd;
@@ -16447,7 +16458,6 @@ img {
 .wallet_panel {
   padding: 0px;
   background: white;
-  box-shadow: 0 0 5px #ddd;
   margin-bottom: 52px !important;
 }
 
@@ -16582,6 +16592,7 @@ img {
   font-weight: 600;
   padding-bottom: 16px;
   font-weight: 600;
+  font-size: 16px;
 }
 .modal_sub_title {
   font-weight: 100;
@@ -16997,10 +17008,14 @@ img {
   .description_details {
     margin-top: -50px !important;
   }
+
   
 }
 
 @media only screen and (max-width: 1023px) {
+  .wallet_right_block{
+    display: none;
+  }
   .orders_panel_head{
     margin-bottom: 0px;
   }
@@ -17061,9 +17076,24 @@ img {
   .wallet_right_block{
     display:none
   }
+  .wallet_right_block{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 767px) {
+  .withdraw_title{
+    margin-top: 10px;
+  }
+  .orders_panel_head{
+    margin-bottom: 15px;
+  }
+  .platform_table_body {
+    margin-top: 28px;
+  }
+  .wallet_panel_head{
+    margin-bottom: 15px !important;
+  }
   .single_order_modal .modal__container{
     min-height:50%  !important;
   }
@@ -17588,7 +17618,7 @@ img {
     margin-left: 13px ;
   }
   .platform_lorem_ipsum{
-    margin-top:0px;
+    margin-top:15px;
   }
   .settings__sidebar .content__wrap .content__title {
     margin-top: 20px;
@@ -17636,7 +17666,7 @@ img {
 
 @media only screen and (max-width: 767px) {
   .platform_lorem_ipsum{
-    margin-top:10px;
+    margin-top:25px;
   }
   .platform_panel{
     background:#fff;
@@ -17788,6 +17818,7 @@ img {
 .dashboard_overview_col:last-child{
   margin-left: 0px !important;
 }
+
 
 
 

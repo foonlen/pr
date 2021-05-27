@@ -16955,7 +16955,7 @@ img {
   color: #a6aeb7;
 }
 .dashboard_main_img {
-  height: 147px;
+  height: 181px;
   width: 91%;
 }
 .dashbboard_left_block_wallet {
@@ -16970,7 +16970,15 @@ img {
 }
 .dashbboard_left_block_wallet_pending {
   color: #75df97;
+  margin-bottom: 2px;
+  margin-top: 9px;
+}
+.wallet_claimed{
   margin-bottom: 12px;
+  color: #8181a5;
+}
+.profile_sub_header{
+  margin-left: 31px;
 }
 .dashbboard_left_block_wallet_details {
   color: #a6aeb7;
@@ -17002,6 +17010,10 @@ img {
   display: flex;
   justify-content: space-between;
 }
+
+/* .wallet_click_here{
+  margin-bottom: 14px;
+} */
 
 @media only screen and (min-width: 1023px) {
   .description_details {

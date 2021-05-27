@@ -17011,9 +17011,9 @@ img {
   justify-content: space-between;
 }
 
-/* .wallet_click_here{
+.wallet_click_here{
   margin-bottom: 14px;
-} */
+}
 
 @media only screen and (min-width: 1023px) {
   .description_details {

@@ -17618,11 +17618,9 @@ img {
   margin-bottom: 7px;
 }
 
-/* @media only screen and (min-width: 1023px) {
-  .description_details {
-    margin-top: -70px !important;
-  }
-} */
+.second_setting{
+  margin-top:24;
+}
 
 @media only screen and (max-width: 1023px) {
   .wallet_first_block{
@@ -17806,8 +17804,17 @@ position:fixed;
   .daysleft .empty__btn {
     padding: 8px;
   }
+  
 }
 
+
+
+
+@media only screen and (max-width: 1180px) {
+  .single_order .settings{
+    display:block;
+  }
+}
 .review_btn{
   margin-bottom: 20px;
   border-top: none;

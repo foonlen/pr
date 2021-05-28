@@ -7,23 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="Page description"><!-- Twitter Card data-->
+    <meta name="description" content="CoinPedia Publisher Panel is a work management tool for Crypto , Fintech and Social media by Coinpeda.org . The tool helps publishers and influencers to find business opportunities for sponsored posts and freelancing work and also manage wallet and orders."><!-- Twitter Card data-->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@publisher_handle">
     <meta name="twitter:title" content="Page Title">
-    <meta name="twitter:description" content="Page description less than 200 characters">
+    <meta name="twitter:description" content="CoinPedia Publisher Panel is a work management tool for Crypto , Fintech and Social media by Coinpeda.org . The tool helps publishers and influencers to find business opportunities for sponsored posts and freelancing work and also manage wallet and orders.">
     <meta name="twitter:creator" content="@author_handle">
     <meta name="twitter:image" content="http://www.example.com/image.jpg"><!-- Open Graph data-->
     <meta property="og:title" content="Title Here">
     <meta property="og:type" content="article">
     <meta property="og:url" content="http://www.example.com/">
     <meta property="og:image" content="http://example.com/image.jpg">
-    <meta property="og:description" content="Description Here">
+    <meta property="og:description" content="CoinPedia Publisher Panel is a work management tool for Crypto , Fintech and Social media by Coinpeda.org . The tool helps publishers and influencers to find business opportunities for sponsored posts and freelancing work and also manage wallet and orders.">
     <meta property="og:site_name" content="Site Name, i.e. Moz">
     <meta property="fb:admins" content="Facebook numeric ID">
+    <meta name="keywords" content="Coinpedia Publisher Login, Coinpedia, coinpedia PR Agency, list as influencers, Influencer marketing">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,500&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,500&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -55,10 +57,10 @@
                     <div class="nav__preview"><i class="la la-toolbox "></i></div>
                     <div class="nav__title">My Orders</div>
                   </a><a class="nav__link" href="platform.html" title="Tasks">
-                    <div class="nav__preview"><i class="la la-clipboard-check "></i></div>
+                    <div class="nav__preview"><i class="la la-list"></i></div>
                     <div class="nav__title">Platform</div>
                   </a><a class="nav__link" href="wallet.html" title="Kanban">
-                    <div class="nav__preview"><i class="la la-images "></i></div>
+                    <div class="nav__preview"><img src='img/wallet.png' width='19px' /></div>
                     <div class="nav__title">Wallet</div>
                   </a></div>
               </div>
@@ -78,16 +80,16 @@
           <div class="container__new new js-new">
             <button class="new__action action js-new-open custom_search__action"><img src='img/user-1.jpg' width='20' style='border-radius:50%; margin-right:10px' /><span class="userprofilename">Evan Yates</span><i class="la la-angle-down" style='margin-left:10px'></i></button>
             <div class="new__dropdown js-new-dropdown"><a class="new__item" href="profile.html">
-                <div class="new__icon"><i class="la la-toolbox "></i></div>
+                <div class="new__icon"><i class="la la-user"></i></div>
                 <div class="new__title">Profile</div>
               </a><a class="new__item" href="wallet.html">
-                <div class="new__icon"><i class="la la-clipboard-check "></i></div>
+                <div class="new__icon"><img src='img/wallet.png' width='19px' /></div>
                 <div class="new__title">Wallet</div>
               </a><a class="new__item" href="#">
-                <div class="new__icon"><i class="la la-user-lock "></i></div>
+                <div class="new__icon"><i class="la la-user-lock"></i></div>
                 <div class="new__title">Updates</div>
               </a><a class="new__item" href="index.html">
-                <div class="new__icon"><i class="la la-calendar-week "></i></div>
+                <div class="new__icon"><i class="la la-arrow-right"></i></div>
                 <div class="new__title">Logout</div>
               </a></div>
             <div class="new__backdrop backdrop js-new-backdrop"></div>
@@ -524,9 +526,8 @@
 
     <div id="myModal" class="modal modal_md js-modal platform_popup_modal">
       <div class="modal__container js-modal-container">
-        
         <div class="modal__body">
-          <!-- invoice-->
+          
           <div class='close '>close<i class='la la-close' style='margin-left:5px;margin-top: 2px;font-size: 13px;'></i></div>
           <div class="invoice">
             <div class="invoice__container">
@@ -536,7 +537,7 @@
                   <div class="invoice__title title">Platform Details</div>
                   <div class="invoice__row invoice__row_body">
                     <div class="invoice__col">
-                      <!-- <div class="invoice__company">WhiteOnWhite</div> -->
+                      
                       <div class="invoice__content">
                         <p>Platform Name</p>
                         <p>Platform Type</p>
@@ -547,7 +548,7 @@
                       </div>
                     </div>
                     <div class="invoice__col">
-                      <!-- <div class="invoice__company">Dropbox Inc.</div> -->
+                      
                       <div class="invoice__content">
                         <p><strong>Tech Sumo</strong></p>
                         <p><strong>Social Media</strong></p>
@@ -559,58 +560,104 @@
                   </div>
                 </div>
                 
-                <table class="invoice__table table">
-                  <thead>
-                    <tr class='modal_sub_title_block' style='margin-top:20px'>
-                      <th># No</th>
-                      <th >Services</th>
-                      <th >Publish Website Link</th>
-                      <th  >Also Share With</th>
-                      <th class="text-right">Price</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>#1 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                      <td>#2 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                      <td>#3 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                      <td>#4 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                      <td>#5 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    
-                    
-                </table>
+                
+                <div class="tableoverflow platform_popup_head">
+                  <div class="grid">
+                    <div class="grid__table">
+                      <div class="grid__head orders_grid_head">
+                        <div class="grid__cell"># No</div>
+                        <div class="grid__cell">Services</div>
+                        <div class="grid__cell">Publish Website Link</div>
+                        <div class="grid__cell">Also Share With</div>
+                        <div class="grid__cell">Price</div>
+                      </div>
+                      <div class="grid__body">
+                        <div class="grid__row">
+                          <div class="grid__cell">
+                            <div class="grid__text">01</div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text-right"><strong>BLog Review</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text">$lavasoft.geosearchresult.com</div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>Social Media</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>500 USd</strong></div>
+                          </div>
+                          
+                        </div>  
+                        <div class="grid__row">
+                          <div class="grid__cell">
+                            <div class="grid__text">01</div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text-right"><strong>BLog Review</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text">$lavasoft.geosearchresult.com</div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>Social Media</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>500 USd</strong></div>
+                          </div>
+                          
+                        </div> 
+                        <div class="grid__row">
+                          <div class="grid__cell">
+                            <div class="grid__text">01</div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text-right"><strong>BLog Review</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text">$lavasoft.geosearchresult.com</div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>Social Media</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>500 USd</strong></div>
+                          </div>
+                          
+                        </div> 
+                        <div class="grid__row">
+                          <div class="grid__cell">
+                            <div class="grid__text">01</div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text-right"><strong>BLog Review</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text">$lavasoft.geosearchresult.com</div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>Social Media</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>500 USd</strong></div>
+                          </div>
+                          
+                        </div> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div><!-- chat-->
-            
+            </div>
           </div>
         </div>
       </div>
@@ -618,13 +665,10 @@
 
 
 
-
-
     <div id="myModal1" class="modal modal_md js-modal platform_popup_modal">
       <div class="modal__container js-modal-container">
-        
         <div class="modal__body">
-          <!-- invoice-->
+          
           <div class='close close1'>close<i class='la la-close' style='margin-left:5px;margin-top: 2px;font-size: 13px;'></i></div>
           <div class="invoice">
             <div class="invoice__container">
@@ -634,7 +678,7 @@
                   <div class="invoice__title title">Platform Details</div>
                   <div class="invoice__row invoice__row_body">
                     <div class="invoice__col">
-                      <!-- <div class="invoice__company">WhiteOnWhite</div> -->
+                      
                       <div class="invoice__content">
                         <p>Platform Name</p>
                         <p>Platform Type</p>
@@ -645,7 +689,7 @@
                       </div>
                     </div>
                     <div class="invoice__col">
-                      <!-- <div class="invoice__company">Dropbox Inc.</div> -->
+                      
                       <div class="invoice__content">
                         <p><strong>Tech Sumo</strong></p>
                         <p><strong>Social Media</strong></p>
@@ -657,90 +701,129 @@
                   </div>
                 </div>
                 
-                <table class="invoice__table table">
-                  <thead>
-                    <tr class='modal_sub_title_block' style='margin-top:20px'>
-                      <th># No</th>
-                      <th >Services</th>
-                      <th >Publish Website Link</th>
-                      <th  >Also Share With</th>
-                      <th class="text-right">Price</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>#1 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                      <td>#2 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                      <td>#3 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                      <td>#4 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                      <td>#5 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    
-                    
-                </table>
+                
+                <div class="tableoverflow platform_popup_head">
+                  <div class="grid">
+                    <div class="grid__table">
+                      <div class="grid__head orders_grid_head">
+                        <div class="grid__cell"># No</div>
+                        <div class="grid__cell">Services</div>
+                        <div class="grid__cell">Publish Website Link</div>
+                        <div class="grid__cell">Also Share With</div>
+                        <div class="grid__cell">Price</div>
+                      </div>
+                      <div class="grid__body">
+                        <div class="grid__row">
+                          <div class="grid__cell">
+                            <div class="grid__text">01</div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text-right"><strong>BLog Review</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text">$lavasoft.geosearchresult.com</div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>Social Media</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>500 USd</strong></div>
+                          </div>
+                          
+                        </div>  
+                        <div class="grid__row">
+                          <div class="grid__cell">
+                            <div class="grid__text">01</div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text-right"><strong>BLog Review</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text">$lavasoft.geosearchresult.com</div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>Social Media</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>500 USd</strong></div>
+                          </div>
+                          
+                        </div> 
+                        <div class="grid__row">
+                          <div class="grid__cell">
+                            <div class="grid__text">01</div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text-right"><strong>BLog Review</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text">$lavasoft.geosearchresult.com</div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>Social Media</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>500 USd</strong></div>
+                          </div>
+                          
+                        </div> 
+                        <div class="grid__row">
+                          <div class="grid__cell">
+                            <div class="grid__text">01</div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text-right"><strong>BLog Review</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text">$lavasoft.geosearchresult.com</div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>Social Media</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>500 USd</strong></div>
+                          </div>
+                          
+                        </div> 
+                      </div>
+                    </div>
+                  </div>
               </div>
             </div><!-- chat-->
-            
+          </div> 
           </div>
         </div>
       </div>
     </div>
-
 
     <div id="myModal2" class="modal modal_md js-modal platform_popup_modal">
       <div class="modal__container js-modal-container">
-        
         <div class="modal__body">
-          <!-- invoice-->
           <div class='close close2'>close<i class='la la-close' style='margin-left:5px;margin-top: 2px;font-size: 13px;'></i></div>
           <div class="invoice">
             <div class="invoice__container">
-             
               <div class="invoice__inner">
                 <div class="invoice__details">
                   <div class="invoice__title title">Platform Details</div>
                   <div class="invoice__row invoice__row_body">
                     <div class="invoice__col">
-                      <!-- <div class="invoice__company">WhiteOnWhite</div> -->
                       <div class="invoice__content">
                         <p>Platform Name</p>
                         <p>Platform Type</p>
                         <p>Platform</p>
                         <p>Followers</p>
                         <p>Services</p>
-                        
                       </div>
                     </div>
                     <div class="invoice__col">
-                      <!-- <div class="invoice__company">Dropbox Inc.</div> -->
                       <div class="invoice__content">
                         <p><strong>Tech Sumo</strong></p>
                         <p><strong>Social Media</strong></p>
@@ -751,91 +834,127 @@
                     </div>
                   </div>
                 </div>
-                
-                <table class="invoice__table table">
-                  <thead>
-                    <tr class='modal_sub_title_block' style='margin-top:20px'>
-                      <th># No</th>
-                      <th >Services</th>
-                      <th >Publish Website Link</th>
-                      <th  >Also Share With</th>
-                      <th class="text-right">Price</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>#1 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                      <td>#2 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                      <td>#3 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                      <td>#4 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                      <td>#5 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    
-                    
-                </table>
-              </div>
-            </div><!-- chat-->
-            
+                <div class="tableoverflow platform_popup_head">
+                  <div class="grid">
+                    <div class="grid__table">
+                      <div class="grid__head orders_grid_head">
+                        <div class="grid__cell"># No</div>
+                        <div class="grid__cell">Services</div>
+                        <div class="grid__cell">Publish Website Link</div>
+                        <div class="grid__cell">Also Share With</div>
+                        <div class="grid__cell">Price</div>
+                      </div>
+                      <div class="grid__body">
+                        <div class="grid__row">
+                          <div class="grid__cell">
+                            <div class="grid__text">01</div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text-right"><strong>BLog Review</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text">$lavasoft.geosearchresult.com</div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>Social Media</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>500 USd</strong></div>
+                          </div>
+                          
+                        </div>  
+                        <div class="grid__row">
+                          <div class="grid__cell">
+                            <div class="grid__text">01</div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text-right"><strong>BLog Review</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text">$lavasoft.geosearchresult.com</div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>Social Media</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>500 USd</strong></div>
+                          </div>
+                          
+                        </div> 
+                        <div class="grid__row">
+                          <div class="grid__cell">
+                            <div class="grid__text">01</div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text-right"><strong>BLog Review</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text">$lavasoft.geosearchresult.com</div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>Social Media</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>500 USd</strong></div>
+                          </div>
+                          
+                        </div> 
+                        <div class="grid__row">
+                          <div class="grid__cell">
+                            <div class="grid__text">01</div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text-right"><strong>BLog Review</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text">$lavasoft.geosearchresult.com</div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>Social Media</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>500 USd</strong></div>
+                          </div>
+                        </div> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- chat-->
+            </div>
           </div>
         </div>
       </div>
     </div>
-
 
     <div id="myModal3" class="modal modal_md js-modal platform_popup_modal">
       <div class="modal__container js-modal-container">
-        
         <div class="modal__body">
-          <!-- invoice-->
-          <div class='close close3 '>close<i class='la la-close' style='margin-left:5px;margin-top: 2px;font-size: 13px;'></i></div>
+          <div class='close close3'>close<i class='la la-close' style='margin-left:5px;margin-top: 2px;font-size: 13px;'></i></div>
           <div class="invoice">
             <div class="invoice__container">
-             
               <div class="invoice__inner">
                 <div class="invoice__details">
                   <div class="invoice__title title">Platform Details</div>
                   <div class="invoice__row invoice__row_body">
                     <div class="invoice__col">
-                      <!-- <div class="invoice__company">WhiteOnWhite</div> -->
                       <div class="invoice__content">
                         <p>Platform Name</p>
                         <p>Platform Type</p>
                         <p>Platform</p>
                         <p>Followers</p>
                         <p>Services</p>
-                        
                       </div>
                     </div>
                     <div class="invoice__col">
-                      <!-- <div class="invoice__company">Dropbox Inc.</div> -->
                       <div class="invoice__content">
                         <p><strong>Tech Sumo</strong></p>
                         <p><strong>Social Media</strong></p>
@@ -846,63 +965,126 @@
                     </div>
                   </div>
                 </div>
-                
-                <table class="invoice__table table">
-                  <thead>
-                    <tr class='modal_sub_title_block' style='margin-top:20px'>
-                      <th># No</th>
-                      <th >Services</th>
-                      <th >Publish Website Link</th>
-                      <th  >Also Share With</th>
-                      <th class="text-right">Price</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>#1 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                      <td>#2 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                      <td>#3 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                      <td>#4 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    <tr>
-                      <td>#5 </td>
-                      <td>BLog Review</td>
-                      <td>$lavasoft.geosearchresult.com</td>
-                      <td>Social Media</td>
-                      <td class="text-right">500 USD</td>
-                    </tr>
-                    
-                    
-                </table>
-              </div>
-            </div><!-- chat-->
-            
+                <div class="tableoverflow platform_popup_head">
+                  <div class="grid">
+                    <div class="grid__table">
+                      <div class="grid__head orders_grid_head">
+                        <div class="grid__cell"># No</div>
+                        <div class="grid__cell">Services</div>
+                        <div class="grid__cell">Publish Website Link</div>
+                        <div class="grid__cell">Also Share With</div>
+                        <div class="grid__cell">Price</div>
+                      </div>
+                      <div class="grid__body">
+                        <div class="grid__row">
+                          <div class="grid__cell">
+                            <div class="grid__text">01</div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text-right"><strong>BLog Review</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text">$lavasoft.geosearchresult.com</div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>Social Media</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>500 USd</strong></div>
+                          </div>
+                          
+                        </div>  
+                        <div class="grid__row">
+                          <div class="grid__cell">
+                            <div class="grid__text">01</div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text-right"><strong>BLog Review</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text">$lavasoft.geosearchresult.com</div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>Social Media</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>500 USd</strong></div>
+                          </div>
+                          
+                        </div> 
+                        <div class="grid__row">
+                          <div class="grid__cell">
+                            <div class="grid__text">01</div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text-right"><strong>BLog Review</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text">$lavasoft.geosearchresult.com</div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>Social Media</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>500 USd</strong></div>
+                          </div>
+                          
+                        </div> 
+                        <div class="grid__row">
+                          <div class="grid__cell">
+                            <div class="grid__text">01</div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text-right"><strong>BLog Review</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <div class="grid__text">$lavasoft.geosearchresult.com</div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>Social Media</strong></div>
+                          </div>
+                          <div class="grid__cell">
+                            <!-- tag-->
+                            <div class="grid__text-right"><strong>500 USd</strong></div>
+                          </div>
+                        </div> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- chat-->
+            </div>
           </div>
         </div>
       </div>
     </div>
+    
+
+
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+    
 
 
 

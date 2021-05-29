@@ -11837,10 +11837,8 @@ img {
   display: flex;
   height: 100%;
   background: white;
-  border-right: 1px solid #f0f0f3;
+  border-right: 1px solid #F0F0F3;
   flex-direction: column;
-  width: 221px;
-  border-radius: 13px;
 }
 
 .nav__list {
@@ -11931,11 +11929,11 @@ img {
 }
 
 .nav__title {
-  display: flex;
+  display: none;
   min-height: 48px;
   padding: 5px 5px 5px 15px;
   border-radius: 0 4px 4px 0;
-
+  font-weight: 700;
   align-items: center;
   flex: 1 1 auto;
 }
@@ -11965,12 +11963,11 @@ img {
 .sidebar {
   display: flex;
   position: fixed;
-  top: 23px;
-  left: 19px;
-  height: 94%;
+  top: 0;
+  left: 0;
+  height: 100%;
   background: white;
   z-index: 59;
-  border-radius: 13px !important;
 }
 
 .sidebar__nav {
@@ -16767,6 +16764,7 @@ img {
 }
 .single_order .panel {
   background: transparent;
+  padding:0px;
 }
 .single_order .panel .settings .settings__containers {
   padding: 20px;
